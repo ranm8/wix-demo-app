@@ -32,8 +32,8 @@
 <script src="//sslstatic.wix.com/services/js-sdk/1.16.0/js/Wix.js"></script>
 
 <!-- fos js routing bundle -->
-<script type="text/javascript" src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
-<script type="text/javascript" src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+<script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 
 <!-- dependency scripts -->
 {% javascripts
