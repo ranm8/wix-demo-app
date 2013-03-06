@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="Base">
+<head>
+    <meta charset="utf-8">
+    <title>Wix demo application</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <!-- dependency css -->
+    {% stylesheets
+    '@WixDemoBundle/Resources/public/lib/bootstrap/css/bootstrap.css'
+    '@WixDemoBundle/Resources/public/lib/chosen/chosen.css'
+    '@WixDemoBundle/Resources/public/lib/color-picker/color-picker.css'
+    '@WixDemoBundle/Resources/public/lib/fontello/css/fontello.css' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
+    <!-- application styles -->
+    {% stylesheets
+    '@WixDemoBundle/Resources/public/css/settings.css'
+    '@WixDemoBundle/Resources/public/css/style.css' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+</head>
+<body>
+
+<!-- content -->
+<div id="main" role="main">
+    <div data-ng-view></div>
+</div>
+
+<!-- wix sdk -->
+<script src="//sslstatic.wix.com/services/js-sdk/1.16.0/js/Wix.js"></script>
+
+<!-- fos js routing bundle -->
+<script type="text/javascript" src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+<script type="text/javascript" src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+
+<!-- dependency scripts -->
+{% javascripts
+'@WixDemoBundle/Resources/public/lib/jquery/jquery.js'
+'@WixDemoBundle/Resources/public/lib/jquery-ui/js/jquery-ui.js'
+'@WixDemoBundle/Resources/public/lib/chosen/chosen.jquery.js'
+'@WixDemoBundle/Resources/public/lib/bootstrap/js/bootstrap.js'
+'@WixDemoBundle/Resources/public/lib/color-picker/color-pickers/simple.js'
+'@WixDemoBundle/Resources/public/lib/color-picker/color-pickers/advanced.js'
+'@WixDemoBundle/Resources/public/lib/color-picker/color-picker.js'
+'@WixDemoBundle/Resources/public/lib/angular/angular.js'
+'@WixDemoBundle/Resources/public/lib/wix/wix.js'
+'@WixDemoBundle/Resources/public/lib/text-extension/text.js'
+'@WixDemoBundle/Resources/public/lib/ui-extension/ui.js' %}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+<!-- application scripts -->
+{% javascripts
+'@WixDemoBundle/Resources/public/js/controllers/*.js'
+'@WixDemoBundle/Resources/public/js/*.js' %}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+</body>
+</html>

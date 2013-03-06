@@ -1,0 +1,57 @@
+.settings-window {
+  @include box-sizing("border-box");
+  background: $wixBright;
+  width: $settingsWindowWidth;
+  padding: $settingsPadding;
+  position: relative;
+}
+.box-style {
+  border: 1px solid $wixGray;
+  border-radius: 8px;
+  background: #fff;
+  padding: $settingsPadding/2;
+}
+.ajax-loader {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -16px;
+}
+
+/* *********** */
+/* top section */
+/* *********** */
+.settings-header {
+  @extend .box-style;
+  font-size: 0;
+  & > div {
+    display: inline-block;
+    height: 150px;
+    font-size: 12px; }
+
+  .logo {
+    border-right: 1px solid #e7e7e7;
+    padding: 0 $settingsPadding;
+    a:before {
+      content: " ";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; } }
+
+  .connect {
+    @include box-sizing("border-box");
+    vertical-align: top;
+    padding: $settingsPadding/2 $settingsPadding;
+    position: relative;
+    width: $connectSectionWidth;
+
+    .bottom-left {
+      position: absolute;
+      bottom: $settingsPadding/2;
+      left: $settingsPadding; }
+    .bottom-right {
+      position: absolute;
+      right: $settingsPadding;
+      bottom: $settingsPadding/2; }
+  }
+}

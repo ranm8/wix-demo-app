@@ -1,0 +1,37 @@
+body {
+text-align:center;
+color:#333;
+background:#FAF0D9;
+padding:20px 0 30px; }
+
+#main {
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3),
+              0 0 40px rgba(0,0,0,0.1) inset;
+  position:relative;
+  z-index:1;
+  width:620px;
+  background:#FAF0D9;
+  margin:0 auto;
+  background:#fff;
+  padding:2em;
+  text-align: left;
+}
+
+.front {
+  h2 {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px; }
+  p {
+    font-size: 14px;
+    margin: 20px 0; }
+  .lead { font-size: 20px; }
+  .btn { float: right; }
+  .header { padding: 20px 0; }
+  & > div:not(.header) {
+    @include background(linear-gradient(#f6f6f6 30%, hsla(0,0%,100%,0)),
+                        radial-gradient(50% 0, rgba(0,0,0,.3), transparent 70%));
+    background-repeat: no-repeat;
+    background-size: 100% 2px, 100% 4px;
+    padding: 40px 0 20px; }
+}

@@ -5,6 +5,7 @@ namespace Wix\DemoBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Wix\FrameworkBundle\Controller\WixController;
 use Symfony\Component\HttpFoundation\Response;
 use Wix\FrameworkBundle\Document\User;
@@ -21,12 +22,15 @@ use Wix\FrameworkBundle\Configuration\Permission;
 class UserController extends WixController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="getUser", options={"expose"=true})
      * @Method({"GET"})
      * @Template
      */
     public function getUserAction()
     {
+        // remove later
+        return new JsonResponse(new \stdClass());
+
         /** @var User $user */
         $user = $this->getUserDocument();
 
@@ -34,11 +38,13 @@ class UserController extends WixController
     }
 
     /**
-     * @Route("/")
+     * @Route("/", name="postUser", options={"expose"=true})
      * @Method({"POST"})
-     * @Permission({"OWNER"})
      */
     public function updateUserAction() {
+        // remove later
+        return new JsonResponse(new \stdClass()); // I also removed the @permission annotation, don't forget to put it back
+
         $data = json_decode($this->getRequest()->getContent());
 
         if ($data === null) {
