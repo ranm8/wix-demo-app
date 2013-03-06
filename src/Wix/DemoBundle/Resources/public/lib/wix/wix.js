@@ -80,7 +80,6 @@
                  */
                 sdk.Settings.refreshCurrentApp = function () {
                     var compId = wix.Utils.getOrigCompId();
-                    console.log(compId);
                     wix.Settings.refreshAppByCompIds([compId]);
 
                     return this;

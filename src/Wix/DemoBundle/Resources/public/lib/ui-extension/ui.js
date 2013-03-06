@@ -235,10 +235,13 @@
                         minDate: attr.uiMinDate,
                         monthNames: scope.$eval(attr.uiMonthNames),
                         showOn: attr.uiShowOn,
-                        yearRange: attr.uiYearRange,
-                        onSelect: function(date) {
+                        yearRange: attr.uiYearRange
+                    });
+
+                    elm.datepicker('option', 'onSelect', function(date) {
+                        scope.$apply(function() {
                             ctrl.$setViewValue(date);
-                        }
+                        });
                     });
                 }
             };
