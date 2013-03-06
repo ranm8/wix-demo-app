@@ -24,7 +24,7 @@
                     templateUrl: '/../bundles/wixdemo/partials/view.html'
                 })
                 .otherwise({
-                    redirectTo: '/settings'
+                    redirectTo: '/view'
                 });
 
 //            $locationProvider.html5Mode(true);

@@ -8,9 +8,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Wix\FrameworkBundle\Controller\WixController;
 
 /**
- * @Route("/settings")
+ * @Route("/")
  */
-class SettingsController extends WixController
+class MainController extends WixController
 {
     /**
      * @Route("/", name="settings")
