@@ -1,0 +1,5 @@
+wix_demo:
+    resource: "@WixDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
