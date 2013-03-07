@@ -8,12 +8,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Wix\FrameworkBundle\Controller\WixController;
 
 /**
- * @Route("/")
+ * @Route("/app/{wildcard}", name="_wildcard", requirements={"wildcard" = ".+"})
  */
 class MainController extends WixController
 {
     /**
-     * @Route("/", name="settings")
+     * @Route("/", name="index")
      * @Method({"GET"})
      * @Template()
      */

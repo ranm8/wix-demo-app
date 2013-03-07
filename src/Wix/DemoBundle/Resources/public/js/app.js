@@ -7,27 +7,27 @@
     /**
      * @todo docs
      */
-    window.angular.module('Base', ['Base.filters', 'Base.services', 'Base.directives', 'Base.config', 'Wix', 'Text', 'Ui'])
+    window.angular.module('Base', ['Base.filters', 'Base.services', 'Base.directives', 'Base.config', 'Wix'])
         /**
          * @todo docs
          */
         .config(['$routeProvider', '$locationProvider', 'symfony2RouterProvider', function($routeProvider, $locationProvider, symfony2RouterProvider) {
             $routeProvider
-                .when('/settings', {
+                .when('/app/settings', {
                     controller: window.DemoCtrl,
                     resolve: window.DemoCtrl.resolve,
                     templateUrl: '/../bundles/wixdemo/partials/demo.html'
                 })
-                .when('/view', {
+                .when('/app/view', {
                     controller: window.ViewCtrl,
                     resolve: window.ViewCtrl.resolve,
                     templateUrl: '/../bundles/wixdemo/partials/view.html'
                 })
                 .otherwise({
-                    redirectTo: '/view'
+                    redirectTo: '/app/view'
                 });
 
-//            $locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(true);
 
             symfony2RouterProvider.urlTransformers.push('wixTransformer');
         }]);
