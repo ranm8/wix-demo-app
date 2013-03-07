@@ -13,70 +13,69 @@ use Wix\FrameworkBundle\Document\User;
 class ApplicationUser extends User
 {
     /**
-     * @var string $fontFamily
+     * @MongoDB\String
      */
     protected $fontFamily;
 
     /**
-     * @var string $fontSize
+     * @MongoDB\String
      */
     protected $fontSize;
 
     /**
-     * @var string $titleColor
+     * @MongoDB\String
      */
     protected $titleColor;
 
     /**
-     * @var string $textColor
+     * @MongoDB\String
      */
     protected $textColor;
 
     /**
-     * @var string $urlColor
+     * @MongoDB\String
      */
     protected $urlColor;
 
     /**
-     * @var string $birthDate
+     * @MongoDB\String
      */
     protected $birthDate;
 
     /**
-     * @var string $searchBackground
+     * @MongoDB\String
      */
     protected $searchBackground;
 
     /**
-     * @var boolean $searchBackgroundOpacity
+     * @MongoDB\Boolean
      */
     protected $searchBackgroundOpacity;
 
     /**
-     * @var int $searchBackgroundOpacityValue
+     * @MongoDB\Int
      */
     protected $searchBackgroundOpacityValue;
 
     /**
-     * @var string $searchBorder
+     * @MongoDB\String
      */
     protected $searchBorder;
 
     /**
-     * @var boolean $searchBorderOpacity
+     * @MongoDB\Boolean
      */
     protected $searchBorderOpacity;
 
     /**
-     * @var int $searchBorderOpacityValue
+     * @MongoDB\Int
      */
     protected $searchBorderOpacityValue;
 
     /**
-     * @var string $borderColor
+     * @MongoDB\String
      */
     protected $borderColor;
-
 
     /**
      * Set fontFamily

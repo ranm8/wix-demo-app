@@ -46,8 +46,23 @@ class UserController extends ParentController
         /** @var ApplicationUser $user */
         $user = $this->getUserDocument();
 
+        $user->setFontFamily($data->fontFamily);
+        $user->setFontSize($data->fontSize);
         $user->setTitleColor($data->titleColor);
-        $user = $this->updateUserDoc($user);
+        $user->setTextColor($data->textColor);
+        $user->setUrlColor($data->urlColor);
+        $user->setBirthDate($data->birthDate);
+        $user->setSearchBackground($data->searchBackground);
+        $user->setSearchBackgroundOpacity($data->searchBackgroundOpacity);
+        $user->setSearchBackgroundOpacityValue($data->searchBackgroundOpacityValue);
+        $user->setSearchBorder($data->searchBorder);
+        $user->setSearchBorderOpacity($data->searchBorderOpacity);
+        $user->setSearchBorderOpacityValue($data->searchBorderOpacityValue);
+        $user->setBorderColor($data->borderColor);
+
+//        $user = $this->updateUserDoc($user);
+        $this->getDocumentManager()->persist($user);
+        $this->getDocumentManager()->flush($user);
 
         return $this->jsonResponse($user);
     }
