@@ -79,5 +79,5 @@ doctrine_mongodb:
 # Wix Framework Configuration
 wix_framework:
   keys:
-    application_key: 12e8e6dc-9030-ee2a-2e05-a1f4c1b75ff6
-    application_secret: c157f71d-dc6c-4e34-887c-20dd0f1f269c
+    application_key: 12e920bd-0098-1f33-c031-6ac2cca60082
+    application_secret: 818174da-33fb-4f53-9814-bbda85b20e7b
