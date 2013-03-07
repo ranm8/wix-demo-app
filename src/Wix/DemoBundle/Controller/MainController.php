@@ -21,4 +21,9 @@ class MainController extends WixController
     {
         return array();
     }
+
+    protected function getDocumentType()
+    {
+
+    }
 }

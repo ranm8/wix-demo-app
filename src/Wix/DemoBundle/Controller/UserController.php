@@ -28,9 +28,6 @@ class UserController extends WixController
      */
     public function getUserAction()
     {
-        // remove later
-        return new JsonResponse(new \stdClass());
-
         /** @var User $user */
         $user = $this->getUserDocument();
 
@@ -41,10 +38,8 @@ class UserController extends WixController
      * @Route("/", name="postUser", options={"expose"=true})
      * @Method({"POST"})
      */
-    public function updateUserAction() {
-        // remove later
-        return new JsonResponse(new \stdClass()); // I also removed the @permission annotation, don't forget to put it back
-
+    public function updateUserAction()
+    {
         $data = json_decode($this->getRequest()->getContent());
 
         if ($data === null) {

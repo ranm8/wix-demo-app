@@ -22,9 +22,6 @@
                     controller: window.ViewCtrl,
                     resolve: window.ViewCtrl.resolve,
                     templateUrl: '/../bundles/wixdemo/partials/view.html'
-                })
-                .otherwise({
-                    redirectTo: '/app/view'
                 });
 
             $locationProvider.html5Mode(true);

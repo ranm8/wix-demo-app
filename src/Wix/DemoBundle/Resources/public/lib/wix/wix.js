@@ -18,11 +18,13 @@
          * will be displayed (page applications only).
          *
          * Please note that this feature only works when HTML5 mode is enabled.
+         *
+         * * currently disabled.
          */
         .run(['$rootScope', '$location', 'sdk', function ($rootScope, $location, sdk) {
-            $rootScope.$on('$routeChangeSuccess', function() {
-                sdk.pushState($location.path());
-            });
+//            $rootScope.$on('$routeChangeSuccess', function() {
+//                sdk.pushState($location.path());
+//            });
         }])
 
         /**

@@ -59,7 +59,7 @@
   margin-top: 10px;
   overflow: hidden;
   white-space: nowrap;
-  background-image: url('../../images/transparency.gif');
+  /*background-image: url('../../images/transparency.gif');*/
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -170,7 +170,7 @@ button#selectColor {
   border-radius: 3px;
 }
 .color-icon {
-  background: url("../../images/color-picker-dropdown-frame.png") 0 0 no-repeat;
+  /*background: url("../../images/color-picker-dropdown-frame.png") 0 0 no-repeat;*/
   margin: 2px 0 0 2px;
   width: 25px;
   height: 25px;
@@ -182,7 +182,7 @@ button#selectColor {
   display: block;
   width: 50px;
   height: 25px;
-  background-image: url("../../images/color-selector-sprite.png");
+  /*background-image: url("../../images/color-selector-sprite.png");*/
   background-repeat: no-repeat;
   background-position: 0 2px;
 }
