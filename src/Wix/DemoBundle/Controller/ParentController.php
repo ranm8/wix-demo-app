@@ -13,4 +13,12 @@ class ParentController extends WixController
     {
         return 'WixDemoBundle:ApplicationUser';
     }
+
+    /**
+     * @inheritDoc
+     */
+    protected function getDocumentClass()
+    {
+        return 'Wix\DemoBundle\Document\ApplicationUser';
+    }
 }
