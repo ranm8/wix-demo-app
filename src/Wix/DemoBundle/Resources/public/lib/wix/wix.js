@@ -75,8 +75,10 @@
                 }
 
                 /**
+                 * @name Wix.sdk#Settings.refreshCurrentApp
+                 * @propertyOf Wix.sdk
+                 * @description
                  * Refreshes the single application instance that's related to this settings page.
-                 * @returns {*} The settings object itself (chaining).
                  */
                 sdk.Settings.refreshCurrentApp = function () {
                     var compId = wix.Utils.getOrigCompId();
@@ -115,50 +117,44 @@
                 }
 
                 /**
+                 * @name Wix.sdk#getSiteInfo
+                 * @propertyOf Wix.sdk
+                 * @description
                  * Returns information about the host site in which the app is shown. The method accepts a single
                  * callback, that when called, will get an object with the following attributes:
-                 *
-                     siteTitle: the title of the site that is used for SEO.
-                     pageTitle: the site current page title that is used for SEO
-                     siteDescription: the description of the site that is used for SEO
-                     siteKeywords: the keywords which were related to the site and are used for SEO
-                     referrer: the referrer header of the http request
-                     url: the full url taken from the location.href, include internal site state
-                     baseUrl: base url of the current site
-                 *
-                 * @param {function} callback A callback to run when the information has been fetched. That callback
-                 * will receive the information as it's first parameter.
-                 * @returns {promise}
+                 *   siteTitle: the title of the site that is used for SEO..
+                 *   pageTitle: the site current page title that is used for SEO.
+                 *   siteDescription: the description of the site that is used for SEO.
+                 *   siteKeywords: the keywords which were related to the site and are used for SEO.
+                 *   referrer: the referrer header of the http request.
+                 *   url: the full url taken from the location.href, include internal site state.
+                 *   baseUrl: base url of the current site.
                  */
                 sdk.getSiteInfo = sdk.Settings.getSiteInfo = defer(wix.getSiteInfo);
 
                 /**
+                 * @name Wix.sdk#requestLogin
+                 * @propertyOf Wix.sdk
+                 * @description
                  * The request login method requests the current user of the wix site to login or register (i.e. the user
                  * of site, not the owner of the site in the editor). After a successful login, the Wix site will
                  * reload including the app iframe and the new signed-instance parameter will contain the details of
                  * the logged in user.
-                 *
                  * The method has an affect only for a published site. If called in the Wix editor, the method has no
                  * affect.
-                 *
                  * The method accepts a single callback (since 1.6.0), that when called, will get an object with the
                  * following attributes:
-                 *
-                     authResponse: is the user authenticated or not	true / false
-                     data: member data
-                 *
-                 * @param {function} callback A callback to run when the information has been fetched. That callback
-                 * will receive the information as it's first parameter.
-                 * @returns {promise}
+                 *   authResponse: is the user authenticated or not	true / false.
+                 *   data: member data.
                  */
                 sdk.requestLogin = sdk.Settings.requestLogin = defer(wix.requestLogin);
 
                 /**
+                 * @name Wix.sdk#currentMember
+                 * @propertyOf Wix.sdk
+                 * @description
                  * Accepts a single callback that when called, will be initiated with the current logged-in member
                  * data.
-                 * @param {function} callback A callback to run when the information has been fetched. That callback
-                 * will receive the information as it's first parameter.
-                 * @returns {promise}
                  */
                 sdk.currentMember = sdk.Settings.currentMember = defer(wix.currentMember);
 
