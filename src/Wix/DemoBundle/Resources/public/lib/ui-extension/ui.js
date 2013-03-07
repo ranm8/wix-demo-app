@@ -146,7 +146,7 @@
                         elm.slider('option', 'value', ctrl.$viewValue);
                     };
 
-                    elm.on('slidechange', function(event, ui) {
+                    elm.on('slidestop', function(event, ui) {
                         scope.$apply(function() {
                             ctrl.$setViewValue(ui.value);
                         });

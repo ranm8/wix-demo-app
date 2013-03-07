@@ -6,7 +6,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Wix\FrameworkBundle\Controller\WixController;
 use Symfony\Component\HttpFoundation\Response;
 use Wix\FrameworkBundle\Document\User;
 use Symfony\Component\Serializer\Serializer;
@@ -19,7 +18,7 @@ use Wix\FrameworkBundle\Configuration\Permission;
 /**
  * @Route("/user")
  */
-class UserController extends WixController
+class UserController extends ParentController
 {
     /**
      * @Route("/", name="getUser", options={"expose"=true})
@@ -64,14 +63,6 @@ class UserController extends WixController
         $response->headers->set('Content-type', 'application/json');
 
         return $response;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    protected function getDocumentType()
-    {
-        return 'WixFrameworkBundle:User';
     }
 
     /**
