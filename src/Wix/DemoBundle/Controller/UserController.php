@@ -2,18 +2,16 @@
 
 namespace Wix\DemoBundle\Controller;
 
+use Wix\DemoBundle\Document\ApplicationUser;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Wix\FrameworkBundle\Configuration\Permission;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
-use Wix\FrameworkBundle\Document\User;
 use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
 use Wix\FrameworkBundle\Exception\MissingParametersException;
-use Wix\FrameworkBundle\Document\UserInterface;
-use Wix\FrameworkBundle\Configuration\Permission;
 
 /**
  * @Route("/user")
@@ -27,17 +25,17 @@ class UserController extends ParentController
      */
     public function getUserAction()
     {
-        /** @var User $user */
-        $user = $this->getUserDocument();
-
-        return $this->jsonResponse($user);
+        return $this->jsonResponse(
+            $this->getUserDocument()
+        );
     }
 
     /**
      * @Route("/", name="postUser", options={"expose"=true})
      * @Method({"POST"})
+     * @Permission({"OWNER"})
      */
-    public function updateUserAction()
+    public function postUserAction()
     {
         $data = json_decode($this->getRequest()->getContent());
 
@@ -45,8 +43,10 @@ class UserController extends ParentController
             throw new MissingParametersException('POST data was not given');
         }
 
-        /** @var UserInterface $user */
+        /** @var ApplicationUser $user */
         $user = $this->getUserDocument();
+
+        $user->setTitleColor($data->titleColor);
         $user = $this->updateUserDoc($user);
 
         return $this->jsonResponse($user);
@@ -54,19 +54,18 @@ class UserController extends ParentController
 
     /**
      * Serializes the object and returns JSON response
+     *
      * @param $object
-     * @return Response
+     * @return JsonResponse
      */
     protected function jsonResponse($object)
     {
-        $response = new Response($this->getSerializer()->serialize($object, 'json'));
-        $response->headers->set('Content-type', 'application/json');
-
-        return $response;
+        return new JsonResponse($this->getSerializer()->normalize($object, 'json'));
     }
 
     /**
      * Returns GetSetMethod JSON serializer object
+     *
      * @return Serializer
      */
     protected function getSerializer()

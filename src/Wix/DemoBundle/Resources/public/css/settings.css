@@ -1,0 +1,1210 @@
+/* ============================================================================= */
+/* HTML5 display definitions */
+/* ============================================================================= */
+/* line 7, ../resources/sass/partials/_emphasize.scss */
+article, aside,
+details, figcaption,
+figure, footer, header,
+hgroup, nav, section {
+  display: block; }
+
+/* line 8, ../resources/sass/partials/_emphasize.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 9, ../resources/sass/partials/_emphasize.scss */
+audio:not([controls]) {
+  display: none; }
+
+/* line 10, ../resources/sass/partials/_emphasize.scss */
+[hidden] {
+  display: none; }
+
+/* ============================================================================= */
+/* Base - HTML5 Boilerplate */
+/* ============================================================================= */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+/* line 20, ../resources/sass/partials/_emphasize.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 22, ../resources/sass/partials/_emphasize.scss */
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231; }
+
+/* line 24, ../resources/sass/partials/_emphasize.scss */
+body, button, input,
+select, textarea {
+  font-family: sans-serif;
+  color: #222; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+/* line 31, ../resources/sass/partials/_emphasize.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+/* line 32, ../resources/sass/partials/_emphasize.scss */
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+/* ============================================================================= */
+/* Forms - Baseline framework and HTML5 boilerplate */
+/* ============================================================================= */
+/* line 37, ../resources/sass/partials/_emphasize.scss */
+form {
+  overflow: auto;
+  margin: 0; }
+
+/* line 38, ../resources/sass/partials/_emphasize.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* line 39, ../resources/sass/partials/_emphasize.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0; }
+
+/* line 40, ../resources/sass/partials/_emphasize.scss */
+label {
+  display: block;
+  cursor: pointer; }
+
+/* line 41, ../resources/sass/partials/_emphasize.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+/* line 43, ../resources/sass/partials/_emphasize.scss */
+button, input {
+  line-height: normal;
+  *overflow: visible; }
+
+/* line 44, ../resources/sass/partials/_emphasize.scss */
+table button, table input {
+  *overflow: auto; }
+
+/* line 46, ../resources/sass/partials/_emphasize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 51, ../resources/sass/partials/_emphasize.scss */
+input[type="text"],
+input[type="password"],
+input[type="select"],
+input[type="search"] {
+  width: 99%;
+  display: block; }
+
+/* line 52, ../resources/sass/partials/_emphasize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 54, ../resources/sass/partials/_emphasize.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 57, ../resources/sass/partials/_emphasize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; }
+
+/* line 58, ../resources/sass/partials/_emphasize.scss */
+input[type="radio"] {
+  top: -1px;
+  margin: 0 4px 3px 1px; }
+
+/* line 59, ../resources/sass/partials/_emphasize.scss */
+input[type="checkbox"] {
+  top: -2px;
+  margin: 0 4px 3px 1px; }
+
+/* line 60, ../resources/sass/partials/_emphasize.scss */
+input[type="file"] {
+  margin: 0px 6px 3px 6px; }
+
+/* line 64, ../resources/sass/partials/_emphasize.scss */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+/* line 66, ../resources/sass/partials/_emphasize.scss */
+select {
+  display: block;
+  margin: 0px; }
+
+/* line 67, ../resources/sass/partials/_emphasize.scss */
+textarea {
+  width: 99%;
+  display: block;
+  clear: left;
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/* input:invalid, textarea:invalid 	{ background-color: #f0dddd; } */
+/* line 73, ../resources/sass/partials/_emphasize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; }
+
+/* line 75, ../resources/sass/partials/_emphasize.scss */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px; }
+
+/* ============================================================================= */
+/* Tables - Baseline framework */
+/* ============================================================================= */
+/* line 79, ../resources/sass/partials/_emphasize.scss */
+table {
+  border-collapse: collapse;
+  border-top: solid 3px #000;
+  position: relative;
+  margin-top: 18px;
+  border-spacing: 0; }
+
+/* line 82, ../resources/sass/partials/_emphasize.scss */
+td {
+  vertical-align: top; }
+
+/* line 83, ../resources/sass/partials/_emphasize.scss */
+th, td {
+  line-height: 18px;
+  padding: 9px 18px 8px 0; }
+
+/* line 84, ../resources/sass/partials/_emphasize.scss */
+thead th, thead td {
+  padding-top: 7px; }
+
+/* line 85, ../resources/sass/partials/_emphasize.scss */
+tfoot th, tfoot td {
+  padding-bottom: 8px; }
+
+/* line 87, ../resources/sass/partials/_emphasize.scss */
+tbody th, tbody td,
+tfoot th, tfoot td {
+  border-top: solid 1px #000; }
+
+/* line 89, ../resources/sass/partials/_emphasize.scss */
+th:first-child, td:first-child {
+  padding-left: 0; }
+
+/* line 90, ../resources/sass/partials/_emphasize.scss */
+th:last-child, td:last-child {
+  padding-right: 0; }
+
+/* line 94, ../resources/sass/partials/_emphasize.scss */
+tbody tr:nth-child(odd) th,
+tbody tr:nth-child(odd) td {
+  background: rgba(0, 0, 0, 0.035); }
+
+/* line 96, ../resources/sass/partials/_emphasize.scss */
+caption {
+  top: 5px;
+  margin-bottom: 18px; }
+
+/* ============================================================================= */
+/* Typography - HTML5 Boilerplate */
+/* ============================================================================= */
+/* line 101, ../resources/sass/partials/_emphasize.scss */
+p {
+  margin: 0; }
+
+/* line 102, ../resources/sass/partials/_emphasize.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0; }
+
+/* line 103, ../resources/sass/partials/_emphasize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 104, ../resources/sass/partials/_emphasize.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 105, ../resources/sass/partials/_emphasize.scss */
+blockquote {
+  margin: 1em 40px; }
+
+/* line 106, ../resources/sass/partials/_emphasize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 107, ../resources/sass/partials/_emphasize.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 109, ../resources/sass/partials/_emphasize.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* line 110, ../resources/sass/partials/_emphasize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+/* line 114, ../resources/sass/partials/_emphasize.scss */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+/* line 118, ../resources/sass/partials/_emphasize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 120, ../resources/sass/partials/_emphasize.scss */
+q {
+  quotes: none; }
+
+/* line 121, ../resources/sass/partials/_emphasize.scss */
+q:before, q:after {
+  content: "";
+  content: none; }
+
+/* line 122, ../resources/sass/partials/_emphasize.scss */
+small {
+  font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+/* line 125, ../resources/sass/partials/_emphasize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 127, ../resources/sass/partials/_emphasize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 128, ../resources/sass/partials/_emphasize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ============================================================================= */
+/* Lists - HTML5 Boilerplate */
+/* ============================================================================= */
+/* line 133, ../resources/sass/partials/_emphasize.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+/* line 134, ../resources/sass/partials/_emphasize.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+/* ============================================================================= */
+/* Embedded content - HTML5 Boilerplate */
+/* ============================================================================= */
+/* Improve image quality when scaled in IE7 */
+/* Remove the gap between images and borders on image containers */
+/* line 141, ../resources/sass/partials/_emphasize.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+/* Correct overflow not hidden in IE9 */
+/* line 144, ../resources/sass/partials/_emphasize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ============================================================================= */
+/* Figures - HTML5 Boilerplate */
+/* ============================================================================= */
+/* line 149, ../resources/sass/partials/_emphasize.scss */
+figure {
+  margin: 0; }
+
+/* ============================================================================= */
+/* Links */
+/* ============================================================================= */
+/* line 158, ../resources/sass/partials/_emphasize.scss */
+a,
+a:focus,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0; }
+
+/*
+A mixin to take an image path and:
+  + Implement it as a data URI.
+  + Calculate its width and height.
+  + Add an inline-block display.
+Its main purpose is to simplify implementation of image replacement.
+
+In your scss:
+.some-class { @include background-image("path-to-image.jpg"[,additional-arguments]); }
+*/
+/*
+Helper to ease the use of inline-blocks -
+The faster, more usable and more sane use of aligning elements horizontally.
+*/
+/*
+Rotate an element by degress.
+Can only get a multiplication of 90 degrees for sane behavior.
+Other rotations needs careful consideration first to align properly.
+*/
+/* line 1, ../resources/sass/partials/_demo.scss */
+body {
+  text-align: center;
+  color: #333;
+  background: #FAF0D9;
+  padding: 20px 0 30px; }
+
+/* line 7, ../resources/sass/partials/_demo.scss */
+#main {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  position: relative;
+  z-index: 1;
+  width: 620px;
+  background: #FAF0D9;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2em;
+  text-align: left; }
+
+/* line 21, ../resources/sass/partials/_demo.scss */
+.front h2 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 30px; }
+/* line 25, ../resources/sass/partials/_demo.scss */
+.front p {
+  font-size: 14px;
+  margin: 20px 0; }
+/* line 28, ../resources/sass/partials/_demo.scss */
+.front .lead {
+  font-size: 20px; }
+/* line 29, ../resources/sass/partials/_demo.scss */
+.front .btn {
+  float: right; }
+/* line 30, ../resources/sass/partials/_demo.scss */
+.front .header {
+  padding: 20px 0; }
+/* line 31, ../resources/sass/partials/_demo.scss */
+.front > div:not(.header) {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f6f6f6), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(radial, 50% 0, 0, 50% 0, 70, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(70%, transparent));
+  background: -webkit-linear-gradient(#f6f6f6 30%, rgba(255, 255, 255, 0)), -webkit-radial-gradient(50% 0, rgba(0, 0, 0, 0.3), transparent 70%);
+  background: -moz-linear-gradient(#f6f6f6 30%, rgba(255, 255, 255, 0)), -moz-radial-gradient(50% 0, rgba(0, 0, 0, 0.3), transparent 70%);
+  background: -o-linear-gradient(#f6f6f6 30%, rgba(255, 255, 255, 0)), -o-radial-gradient(50% 0, rgba(0, 0, 0, 0.3), transparent 70%);
+  background: linear-gradient(#f6f6f6 30%, rgba(255, 255, 255, 0)), radial-gradient(50% 0, rgba(0, 0, 0, 0.3), transparent 70%);
+  background-repeat: no-repeat;
+  background-size: 100% 2px, 100% 4px;
+  padding: 40px 0 20px; }
+
+/*
+Wix buttons mixin -
+Just add a color and it will calculate everything accordinly.
+Include:
+  + Linear gradient, using shade function in compass.
+  + Border color and text color according to the color brightness.
+  + Two most common wix button styles (btn-blue and btn-white).
+
+In your scss:
+.btn-color { @include wixButton($color); }
+
+In your html:
+<a href="#" class="btn-color">Some button</a>
+
+TODO: On-the-fly button generator.
+*/
+/* line 45, ../resources/sass/modules/_buttons.scss */
+.btn-blue {
+  background: #00a5ff -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #00a5ff), color-stop(70%, #008cd8));
+  background: #00a5ff -webkit-linear-gradient(#00a5ff 30%, #008cd8 70%);
+  background: #00a5ff -moz-linear-gradient(#00a5ff 30%, #008cd8 70%);
+  background: #00a5ff -o-linear-gradient(#00a5ff 30%, #008cd8 70%);
+  background: #00a5ff linear-gradient(#00a5ff 30%, #008cd8 70%);
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  border: 1px solid #a7a7a7;
+  color: #f6f6f6;
+  font-size: 13px;
+  cursor: pointer; }
+  /* line 38, ../resources/sass/modules/_buttons.scss */
+  .btn-blue:hover {
+    box-shadow: 1px 2px 2px #a7a7a7;
+    color: #f6f6f6; }
+  /* line 41, ../resources/sass/modules/_buttons.scss */
+  .btn-blue:focus, .btn-blue:active {
+    box-shadow: 1px 1px 1px #a7a7a7 inset;
+    color: #f6f6f6; }
+
+/* line 46, ../resources/sass/modules/_buttons.scss */
+.btn-white {
+  background: #f6f6f6 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f6f6f6), color-stop(70%, #d1d1d1));
+  background: #f6f6f6 -webkit-linear-gradient(#f6f6f6 30%, #d1d1d1 70%);
+  background: #f6f6f6 -moz-linear-gradient(#f6f6f6 30%, #d1d1d1 70%);
+  background: #f6f6f6 -o-linear-gradient(#f6f6f6 30%, #d1d1d1 70%);
+  background: #f6f6f6 linear-gradient(#f6f6f6 30%, #d1d1d1 70%);
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  border: 1px solid #c5c5c5;
+  color: #3a3a3a;
+  font-size: 13px;
+  cursor: pointer; }
+  /* line 38, ../resources/sass/modules/_buttons.scss */
+  .btn-white:hover {
+    box-shadow: 1px 2px 2px #c5c5c5;
+    color: #3a3a3a; }
+  /* line 41, ../resources/sass/modules/_buttons.scss */
+  .btn-white:focus, .btn-white:active {
+    box-shadow: 1px 1px 1px #c5c5c5 inset;
+    color: #3a3a3a; }
+
+/*
+Collapsible arrow implementation:
+Styles the arrow for the accordion panes.
+Default, Hover and Active state.
+
+In your scss:
+.default-state { @include collapsible-arrow("default"); }
+.hover-state { @include collapsible-arrow("hover"); }
+.active-state { @include collapsible-arrow("active"); }
+
+Automatically imports with the accordion module.
+See <a href="#">Accordion module</a>.
+*/
+/* line 17, ../resources/sass/modules/_collapsible-arrow.scss */
+.accordion-header:before, .accordion-header:not(.ui-state-active):hover:before, .accordion-header.ui-state-active:before {
+  content: "";
+  background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAA2CAYAAAAlMaJJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90DBA8FLgBL9mEAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAADYUlEQVRYw+2WQWgjVRjHf/M6mVLHtWy7A6m1tYJQpIVS6EqxKevVk9iDUA/VU0+CsLLUWlrK0i6CEFAUwl7SU497dc3FS6LiQaXiIdgyB1uqFDNpY4iTTuZ56EyYNJntpInowQ8eDN9878d73/fe9/6KlJJcLgewBrwLxIluJ8AnwEdzc3M11XPei8fjWyMjI2iaFplUrVaNw8PDrePj4wqQFJ5/eXh4uC0QgKZpDA0NASwD+DAjFotxHfMWEA/CumJdhalhP3Z2dkilUk3+2dlZkskkQojoK1taWmJmZqbBNzg4yObmZktQA+z8/Lxh1Go11tfXGRgYuAgUgo2NDXRdb4ptgtm23TR0XWd1dRUhBIuLi0xMTLSMa8qZ4zi4rtu09MnJSVZWVkgkEg2r8C04pw6TUiKlbJmL+fn5esxlC/r+kXN24jjOtQDevN+CsIeFQoF2gY7jUCgUAB4Gc/axZVmaZVnvAUYbvAKQ9NoQSljS//W7KQAURdFM03xgWdZJqVSSUUexWPzDNM0HCwsLfQAKENvb27s/Njb2wXVXZJrm9tTU1H0B9BuG8XYn2zMM4x3gGQH0q6p6sxNYLBYbBPoF0CulVEIfDfdqmDe/V3h5C7U7X+r8chap6Irwe1XY+LkoSDzW+Tzf+8S4+g1QVRVVDe3gVGqw+r3GV7+rpF5xePapxoPuzxUAPT09oSNomSPB5o9qaJwahD3Jno5BKiF560UFaIxtgCmKgqKE1+HOEKRfhRdutI7x56pXlWjrNqxNd+miRwX5MFkul8ud3ICzs7M/ASkAO5PJfNMJLJPJfA3YALeA19PpdO709PQv2YaVSiU7nU7n+vr63gBuKUAMeA6YBsaBGxGbpguUgDzwA3Dk11oD+oGb3rcScYc2YAGnQFUF2N3drY6Oji53omkTicSFJ5vN3tvf35e2bbeTMmnbtjw4OJDZbPZu8Jz9BzXtVe9mlE7rC5grj8DMI8gXu3Q3fyrA9CNI7nXpRa848P638NoXcFSOALusUy/rVYDHv8KH37mhMWpQ07buthdV1lXJpy/bvDnmEJCx1Gq16JoWYM5w+Ox2med1l8uyti1NuzZR4e5LFS+GzjStD/pf09Y1bb0A4+Pj20KI7Xa36bou+Xy+sQAd5gyAvwGQIicHova6gQAAAABJRU5ErkJggg==');
+  display: inline-block;
+  margin-top: -9px;
+  height: 18px;
+  width: 19px;
+  position: absolute;
+  left: 5px;
+  top: 50%; }
+
+/*
+Slider implementation.
+
+Automatically imports with the slider module.
+See <a href="#">Slider module</a>
+*/
+/* line 24, ../resources/sass/modules/_slider.scss */
+.ui-slider {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAECAIAAADJUWIXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpiTEpOZUACLJJSUih8MTFxFD4TExMyHyDAAGArAc75lL1jAAAAAElFTkSuQmCC') left center repeat-x;
+  height: 4px;
+  width: 5px;
+  display: inline-block;
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 100px;
+  margin: 0 5px;
+  position: relative; }
+  /* line 15, ../resources/sass/modules/_slider.scss */
+  .ui-slider .ui-slider-handle {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAs1JREFUeNqsVE1vElEUPcwHQwttKbVCK8V+xZ0fsZKYYEzYddmEH2C7cuHGrf4Rl+IPQN25bBftQlFTlwZIC1OpUKRTDIVhBsZ3ntIQExMXvcmbzHv3nPvuu+e+5/M8D6PW6/XCxWJxs1QqPWo2m3dGfZFIZH9lZeXV6upq1u/3W6M+32igSqWysbe391L8hgUY0WgUgjDcALVaDWITTq1UKrWVSCTeXpAZiKNQKGxms1lvd3fXs23b+5fRRwyx5Az58lMulzf+OLz/NWLJIZcxNNaEx+FROIZ2cFhGxTyC67pyrmkaEgtxLC1el3NieVRyY7HYjsbCsibJZBLDeuU/fcb3Zhu5ooovjd81un1lgEynjJNGA8m1u3KNHFFXKY66vr7+QhQtFo/H0e/3YR59g1k/w9MdFfudCRhzEVjGOD5UPbw3PaTjA+iKh1AwKLMUNYNpmjGFElMdx3HgiGOcWhZelzQ01SBSa3O4tTCF5WgQM8vTKLmG9BFDLDnkMobCFCmx6/bhOi50Tcd+HYhem0BIVzBtqBjTVJGFTxRgTPqIIZacYXtow+K6rgNXHC0QMKAoHXQGHmrnDiy7j6btou0MIIQWPkViHIEXml+IowybjXV2xC6BQACpxXEcm2coWja+nnZx2LJlQFhd6SOG2IHYjFwZiG1PGXW/LrNSVRVPUjO4MQYcFX6gXG+jIQL2qy3cDPmkjxhiySGXMRTeHba9LhTw+RR0u11Mh3S8e7yMZ/fDeODv46Hu4rn45xp9xBBLDrmM4RPyhXO53IFogfA90RfV6rFIeYCpyUlMTk7ImtC41mr9xFmrJdfm5+fwMZ9nH1mZTGZJ4y3mBdze3n5DKRcSCZzUTySB428zhEqzV2dhVioym3Q6vcUYF7ef3Tm8KuxY2+6hfd6WmQz6A2i6huB4EIbhR15kwiBMgE/KpT4jvst62H4JMAC1Kwjf00DmwQAAAABJRU5ErkJggg==') top left no-repeat;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    border: none;
+    position: absolute;
+    margin-left: -10px;
+    bottom: 0; }
+  /* line 21, ../resources/sass/modules/_slider.scss */
+  .ui-slider .ui-slider-range {
+    background: none; }
+  /* line 22, ../resources/sass/modules/_slider.scss */
+  input:not(:checked) ~ .ui-slider {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5; }
+
+/*
+Wix checkboxes and radio button implementation.
+Takes the form of:
+
+In your html:
+<input id="checkboxID" type="checkbox" class="wix-checkbox"/>
+<label for="checkboxID">Some checkbox</label>
+
+<input id="radioID" type="radio" class="wix-radio"/>
+<label for="radioID">Some radio</label>
+*/
+/* line 28, ../resources/sass/modules/_checkables.scss */
+.wix-checkbox {
+  display: none; }
+  /* line 19, ../resources/sass/modules/_checkables.scss */
+  .wix-checkbox + label:before {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90DAxEGMS0BHpQAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACKklEQVQ4y8WTzWsTQRjGf4nbaHS3raEEP+IaPVkobC4KQg/pSQRRguJNWDx4LPZk8WARjxbqH6AYhCD1EvTaQ3oQ9NameBBPMZRNSskSNav5mN31kOzSJmlajeDAMsyz8/54Z+Z54H+PAEA6nR4HskByn/2rQErX9aonSJ05G4lEkpqmoapq38pisUg+n0+appkFZjw92JkHFgOoqoqmaXR36XVALBbDcZyB/Uej0R7NB9Rq1l9dog/4UasNB7BteziAIsvDAWRlSEDJMAY+o+eF7uH5YDWfz/fdANBsNj0jeW7s6SBlmmY2l8sdyMq7suC67nBp+mPA0+pLFr+5LFbXXNdtH+Ggacx8nyqs/LLjnWWibxpDoVDf4rdfGqy8PxKHlifN7QQMTON6ucX8x22whSeleRR7xkPXf0Y+mAqBhQLnljZZMxo4joPjOJg/BanXW1StJogWarAKtj3X7QPefbbAFhQqdVIZA6NSo2ZZzDzfpFCpgy0Yk2zmT63D47PVHsBsAkaDAoTga6XB1Vdb3Mtus2HUQQhGg4I310McDYq+TuTkMVhOhRmVBIgWn0p1ljcsEC0QLRamD3MhEtjTysiyzKX4GJlbE+3L2vE9mFbQLx5H7pNYH6AoMooic2Vqghe3T4NoH+fGpMyTazH//56AkmEwIkmMSBJ3L0dZunmGRCxM+s55Xy8ZBh3jxfdN4/3kCXKzk4yHDwFQLpf9NOq6XvhnafwNilfvX4+iPmIAAAAASUVORK5CYII=') top left no-repeat;
+    height: 28px;
+    width: 16px;
+    display: inline-block;
+    height: 14px;
+    content: "";
+    margin-right: 7px;
+    position: relative;
+    top: 1px; }
+  /* line 26, ../resources/sass/modules/_checkables.scss */
+  .wix-checkbox:checked + label:before {
+    background-position: 0 -14px; }
+
+/* line 29, ../resources/sass/modules/_checkables.scss */
+.wix-radio {
+  display: none; }
+  /* line 19, ../resources/sass/modules/_checkables.scss */
+  .wix-radio + label:before {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAaCAYAAACD+r1hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MTg4QjgzMDNBODkxMUUyODM2MkUwRTZERTNBNzBDQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2MTg4QjgzMTNBODkxMUUyODM2MkUwRTZERTNBNzBDQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjYxODhCODJFM0E4OTExRTI4MzYyRTBFNkRFM0E3MENCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYxODhCODJGM0E4OTExRTI4MzYyRTBFNkRFM0E3MENCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+DWFsBQAAAcNJREFUeNrcUrtKA0EUPbuuq5ioW9ioRERWVESSEPIBYmOhkN7C/II/oGhrI/6AwQ+QCHYWFlYSzENBwWyRoJhokQy68bGaxHuHjSSKQgobL1zuMPecmTtnjlKv19FOKI1FLBYbpbJGGaE03G1BGadcj0ajuU8CgQNUjrxer+H3+0FVom3bRiaT4crEWSKlFffklGmaRjgchq7rLSM4joNEIgHLspgUVHkMj8djhEIhaJqGWq3WkrzHPcYwVuOZJyYm6aQ3mT8FY5LJ0wgTDEVR8Ejz/qqOIp9rMEFeXa1WfyUwhoMJgv7C6HWV+SnKpZKUmQnxbPYqao6b3xRqVoowvIyzSuuVSkWkUynU6dpOUqU5eY97jGFs+x/XtjX+gfm0r+bbOipi/7wswf7hHqzOD0nzFQoFg6RdU5vNt3l4jZW9PKxn4JJy+/gey7uW7DGGsS3m2z8rw+frw1xwENc2jdKh4uBCyF7DfGqz+Vjhd9Kh8PQG8VqF474jX3I+zae65gObL+jz4O72ESdWCRc3D3gp2pgZ7MbUcD/c/xKqaz7oXTo2FkawON0PkRN4zgsEBnTsLI3JXsN8bcv69+b7EGAArAc4GUs8ZLQAAAAASUVORK5CYII=') top left no-repeat;
+    height: 26px;
+    width: 12px;
+    display: inline-block;
+    height: 13px;
+    content: "";
+    margin-right: 7px;
+    position: relative;
+    top: 1px; }
+  /* line 26, ../resources/sass/modules/_checkables.scss */
+  .wix-radio:checked + label:before {
+    background-position: 0 -13px; }
+
+/*
+Color picker implementation.
+
+Automatically imports with the color picker module.
+See <a href="#">Color picker module</a>
+*/
+/* line 25, ../resources/sass/modules/_color-picker.scss */
+div.colorPicker-picker {
+  background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABUCAYAAADAkmT2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDREZEMkRFNDMxMjA2ODExODhDNjhDQTIxMTQ1RkQ0QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MkM4QzdDNjM2RjkxMUUyOUZFNTkxQjBFMkU5MEQ3QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5MkM4QzdDNTM2RjkxMUUyOUZFNTkxQjBFMkU5MEQ3QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Q0VGRDJERTQzMTIwNjgxMTg4QzY4Q0EyMTE0NUZENEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Q0RGRDJERTQzMTIwNjgxMTg4QzY4Q0EyMTE0NUZENEMiLz4gPC9yZGY6RGVzY3Jp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') top left no-repeat;
+  height: 84px;
+  width: 50px;
+  display: inline-block;
+  height: 28px;
+  vertical-align: middle;
+  border: none;
+  position: relative; }
+  /* line 17, ../resources/sass/modules/_color-picker.scss */
+  div.colorPicker-picker:hover {
+    background-position: 0 -29px; }
+  /* line 18, ../resources/sass/modules/_color-picker.scss */
+  div.colorPicker-picker:active {
+    background-position: 0 -57px; }
+  /* line 19, ../resources/sass/modules/_color-picker.scss */
+  div.colorPicker-picker ~ .inner {
+    display: inline-block;
+    height: 16px;
+    width: 28px;
+    content: "";
+    top: 8px;
+    left: -45px; }
+
+/*
+Date picker implementation.
+
+Automatically imports with the date picker module.
+See <a href="#">Color picker module</a>
+*/
+/* line 8, ../resources/sass/modules/_date-picker.scss */
+input[data-ui-datepicker].hasDatepicker {
+  display: inline-block;
+  vertical-align: middle;
+  height: 23px;
+  width: 65px;
+  line-height: 23px;
+  margin: 0;
+  padding: 0 5px;
+  font-size: 13px; }
+
+/* line 16, ../resources/sass/modules/_date-picker.scss */
+.ui-datepicker-prev:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 50%;
+  border: 5px solid transparent;
+  border-right-color: #0099ff;
+  margin-left: -7.5px; }
+/* line 33, ../resources/sass/modules/_date-picker.scss */
+.ui-datepicker-prev:hover:before {
+  border-right-color: #fff; }
+
+/* line 16, ../resources/sass/modules/_date-picker.scss */
+.ui-datepicker-next:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 50%;
+  border: 5px solid transparent;
+  border-left-color: #0099ff;
+  margin-left: -2.5px; }
+/* line 33, ../resources/sass/modules/_date-picker.scss */
+.ui-datepicker-next:hover:before {
+  border-left-color: #fff; }
+
+/*
+Dialog implementation for popups.
+
+Add "ui-warning" for an exclamation mark.
+Example:
+<div id="dialog" title="Title" ui-warning>Dialog description...</div>
+
+Automatically imports with the dialog module.
+See <a href="#">Dialog module</a>
+*/
+/* line 12, ../resources/sass/modules/_dialog.scss */
+.ui-dialog {
+  box-shadow: 0 0 8px #bbb;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+  text-align: left;
+  padding: 10px;
+  background: #fff;
+  outline: none; }
+  /* line 22, ../resources/sass/modules/_dialog.scss */
+  .ui-warning.ui-dialog {
+    padding-left: 70px;
+    background: white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjY5QUZGRDY2OTRGMTFFMkI2REM5NkIwNkREMjI3MjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjY5QUZGRDc2OTRGMTFFMkI2REM5NkIwNkREMjI3MjAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NjlBRkZENDY5NEYxMUUyQjZEQzk2QjA2REQyMjcyMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NjlBRkZENTY5NEYxMUUyQjZEQzk2QjA2REQyMjcyMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjQGswkAAAPtSURBVHjazFlrSBRRFL6uIgiGJEhSEBiCIGxYRmGsFMKGUBRF9FCMUhGqH/Uje0PgjyKDMIoe4IYVSGEoSIH0ItAUIX9FgmAJQiAEiiBIUtR38KzcTmfd2ZnZ3T74GObO3Hu/OXPumXPPZPw8Vm98wFqwEswFy6327+AkOAH2g/NeJsny0LcKDIO7wVKHfXrBAbAP/JTohBkuLNsM1oFBj2/jCdjDdIRAAoM3gcNgqw9CDT9wN3jb6XhOLfsIPLLM9Wl+tXPgiNVewP5cxC6zHI6D97347CrwMbhDuTYLRkhk5sPI63hP+6u+IR+HarZotXLLPbAYPOPGsht5gM2ifYHbWyBy2s37h3Aasw2sUC53gQcSEbuaHV8KpRW8ByIn/Ih3EF2DQzuYIy7dBU86XWDtitDn4Ba/hBIwVicO28EpcemE5g6aZa+CF0TbLQx82iQJsHAhDoO8EG1sBYdiid0JvhAdnkHoIYeTfsFhndX0Bn3DDvsGWXCu1fwS3BXLDZrE+RjYaFIAPBSth1rRTMZr0MTW8afTRiMGmTMpAuaiz3FnLAPaYkPK6x8wqccVDo9R0EKvscVS6DgoOrWkQShZd5zjuJGGjIrdC+bZ8RSdRk36EFF8d0lsSImpaQMvtkmRL5fFEtvjcp6vcc4TQa84rySxK0SKNsdPlm6xcnGHApzp2Bj3MIEUN+NhrDFxXkJi85Xc1C1mfLSs1LEyoGQ88z5a1ovYWXGeF1DE5fwnYvOk+IBi7nyfxHoRqumYIbEy+JciA8r0QbBXsSVywZHYH2IPn51AHSCZYuWWZyjLimlB8XlzG2vDxh9UifP+QIwAvD+dn1u4YZkwHkWGkYCVkdtRoRwdQi7m+a3QDU4p1ZulRGZWScta02TVIG8E/vn02sn3O+ng6JgOd7hGiZe9sGgjIMWSK9wRHdsgeE0KrdoQzV1FpUbdMHaIcxLajUFyUiA0xMUNG51Rf41VN2hW/JWS8VqkjgtJEkpx/b1ZLOTZOcp6OwvUKjI3wKdKKHuFQQuSIJSKdMNCaLQqM+6kfHSYxIm2beBHDF7hk8hs8DwXVXKVRdbhtNZFoHrsW9FGe6FBTNIFFnsQSjvpz8rKJzwAL2r94hWT6WGoBLlPm5P3SeTPffHKnxBYwu5ELItx2yWzWGszbsRGcR08G+eeEc7g5jmvIB8s5IhCC6homb60k71sr3wNTv/WnAM/gEe5xqCh3Pz9W8kpqJhyU9kZmER8Vtsakzs0GqsM6RJzHHU2cLlo1kknN//BIkz6hldzzSHsYDv0zSz+JBlgP0+44Jfh0x9Gwib2zRx+EPq7OMUiR31Ixs0fAQYAzssXD8AhPkUAAAAASUVORK5CYII=') 15px 50px no-repeat; }
+  /* line 25, ../resources/sass/modules/_dialog.scss */
+  .ui-dialog .ui-dialog-titlebar span {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 0;
+    color: red; }
+  /* line 30, ../resources/sass/modules/_dialog.scss */
+  .ui-dialog .ui-dialog-titlebar-close {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKEQsQM/J6wgkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAB3klEQVQozyXNsUojQRzA4d/MLBnXBY9IjhBSRCRY2AZtUxgU9BUCgTQ2Fj5LDgUJhxK0EgsLMVhYHEJIJ5whhcqhh2CjciHZWze787/ivhf41Hg8FmstIgqlFMZowvAvWmt835KmgjEK5xzOOXQQBERRxPn5OWEY4pygtcZaC8Dr6ysHB22enp7wPA9vOp3S7XY5Oupwf39Ps9kkn/+Kc/D4+Iv9/X36/T7GKLa2tvCiKCIMQ+I45urqCmMMOzs7vL+/02q1GA6HrKysUK1WKRQKeLOzs2xsbBDHCcfHx/R6PabTKaPRiIeHB0qlEtvb2xQKBUQENZlMZGZmho+PP1xfX3NyckKSJIgIpVKJ3d1dlpbKiAhxHKOttaRpyvx8lsXFRXK5HJ7nkclkKBaLLCwsEEUxzjlEBK2UQkS4u/vJ4eF3Xl5+k81+wRjFzc0P9va+oZRgjEFrjeec4/b2lna7zWAwYHl5mXq9TpqmdDodLi4uSJKERqPxf397e2MwGDAcDimXy2xubrK6uoq1ls/PT05PT7m8vKRYLLK2toaXz+ep1Wo8Pz9TqVSoVqv4vk+SJKyvrxMEAWdnZ+RyOebm5lAiIgBxHJOmKb7vAzAajQiCAGMMk8kEgCAI+Ad9U9zxKQ49VQAAAABJRU5ErkJggg==') top left no-repeat;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    outline: none; }
+  /* line 38, ../resources/sass/modules/_dialog.scss */
+  .ui-dialog .ui-dialog-buttonset button {
+    float: left; }
+  /* line 39, ../resources/sass/modules/_dialog.scss */
+  .ui-dialog .ui-dialog-buttonset button:first-child {
+    float: right; }
+
+/* line 41, ../resources/sass/modules/_dialog.scss */
+.ui-widget-overlay {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111 50% 50% repeat;
+  opacity: .7;
+  filter: Alpha(Opacity=70); }
+
+/* line 1, ../resources/sass/partials/_settings-window.scss */
+.settings-window {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #f6f6f6;
+  width: 620px;
+  padding: 20px;
+  position: relative; }
+
+/* line 8, ../resources/sass/partials/_settings-window.scss */
+.box-style, .settings-header, .accordion-window > div {
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px; }
+
+/* line 14, ../resources/sass/partials/_settings-window.scss */
+.ajax-loader {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -16px; }
+
+/* *********** */
+/* top section */
+/* *********** */
+/* line 24, ../resources/sass/partials/_settings-window.scss */
+.settings-header {
+  font-size: 0; }
+  /* line 27, ../resources/sass/partials/_settings-window.scss */
+  .settings-header > div {
+    display: inline-block;
+    height: 150px;
+    font-size: 12px; }
+  /* line 32, ../resources/sass/partials/_settings-window.scss */
+  .settings-header .logo {
+    border-right: 1px solid #e7e7e7;
+    padding: 0 20px; }
+    /* line 35, ../resources/sass/partials/_settings-window.scss */
+    .settings-header .logo a:before {
+      content: " ";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; }
+  /* line 41, ../resources/sass/partials/_settings-window.scss */
+  .settings-header .connect {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 10px 20px;
+    position: relative;
+    width: 424px; }
+    /* line 48, ../resources/sass/partials/_settings-window.scss */
+    .settings-header .connect .bottom-left {
+      position: absolute;
+      bottom: 10px;
+      left: 20px; }
+    /* line 52, ../resources/sass/partials/_settings-window.scss */
+    .settings-header .connect .bottom-right {
+      position: absolute;
+      right: 20px;
+      bottom: 10px; }
+
+/* line 1, ../resources/sass/partials/_accordion.scss */
+.accordion-window > div {
+  margin: 20px 0 0; }
+
+/* line 5, ../resources/sass/partials/_accordion.scss */
+.accordion-header {
+  display: inline-block;
+  vertical-align: top;
+  height: 20px;
+  width: 100%;
+  line-height: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  color: #0099ff;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 30px;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  overflow: hidden; }
+  /* line 30, ../resources/sass/modules/_collapsible-arrow.scss */
+  .accordion-header:before {
+    background-position: 0 -36px; }
+  /* line 18, ../resources/sass/partials/_accordion.scss */
+  .accordion-header:not(.ui-state-active):hover {
+    position: relative; }
+    /* line 30, ../resources/sass/modules/_collapsible-arrow.scss */
+    .accordion-header:not(.ui-state-active):hover:before {
+      background-position: 0 -18px; }
+  /* line 19, ../resources/sass/partials/_accordion.scss */
+  .accordion-header.ui-state-active {
+    position: relative;
+    color: black; }
+
+/* line 25, ../resources/sass/partials/_accordion.scss */
+.accordion-content .settings-list {
+  font-size: 0;
+  padding: 10px 10px 0; }
+  /* line 29, ../resources/sass/partials/_accordion.scss */
+  .accordion-content .settings-list .settings-option {
+    display: inline-block;
+    height: 50px;
+    width: 50%;
+    line-height: 50px;
+    border-top: 1px solid #c5c5c5; }
+  /* line 32, ../resources/sass/partials/_accordion.scss */
+  .accordion-content .settings-list .full-width {
+    width: 100%; }
+  /* line 33, ../resources/sass/partials/_accordion.scss */
+  .accordion-content .settings-list label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 140px;
+    margin: 0;
+    font-size: 14px; }
+  /* line 37, ../resources/sass/partials/_accordion.scss */
+  .accordion-content .settings-list .chzn-container {
+    vertical-align: middle; }
+  /* line 38, ../resources/sass/partials/_accordion.scss */
+  .accordion-content .settings-list .chzn-default {
+    width: 100%; }
+
+/* line 1, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-state-disabled {
+  cursor: default !important; }
+
+/* line 3, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
+/* Overlays */
+/* line 10, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 17, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none; }
+
+/* line 22, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0; }
+
+/* line 27, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  width: 1.8em;
+  height: 1.8em; }
+
+/* line 34, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px; }
+
+/* line 37, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-next {
+  right: 2px; }
+
+/* line 40, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px; }
+
+/* line 43, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px; }
+
+/* line 47, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px; }
+
+/* line 55, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center; }
+
+/* line 60, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0; }
+
+/* line 64, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker select.ui-datepicker-month-year {
+  width: 100%; }
+
+/* line 68, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 49%; }
+
+/* line 71, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em; }
+
+/* line 77, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0; }
+
+/* line 83, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker td {
+  border: 0;
+  padding: 1px; }
+
+/* line 88, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none; }
+
+/* line 94, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0; }
+
+/* line 102, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible; }
+
+/* line 110, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left; }
+
+/* with multiple calendars */
+/* line 115, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto; }
+
+/* line 118, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left; }
+
+/* line 121, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em; }
+
+/* line 125, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%; }
+
+/* line 128, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%; }
+
+/* line 131, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%; }
+
+/* line 135, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0; }
+
+/* line 138, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left; }
+
+/* line 141, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0; }
+
+/* Component containers
+----------------------------------*/
+/* line 150, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-widget {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 1.1em; }
+/* line 154, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-widget .ui-widget {
+  font-size: 1em; }
+/* line 160, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-widget input,
+.ui-datepicker .ui-widget select,
+.ui-datepicker .ui-widget textarea,
+.ui-datepicker .ui-widget button {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 1em; }
+/* line 164, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker.ui-widget-content, .ui-datepicker .ui-widget-content {
+  border: 1px solid #dddddd;
+  background: #ffffff 50% 50% repeat-x;
+  color: #444444; }
+/* line 169, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-widget-content a {
+  color: #444444; }
+/* line 172, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-widget-header {
+  border: 1px solid #dddddd;
+  background: #dddddd 50% 50% repeat-x;
+  color: #444444;
+  font-weight: bold; }
+/* line 178, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-widget-header a {
+  color: #444444; }
+
+/* Interaction states
+----------------------------------*/
+/* line 188, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-default,
+.ui-datepicker .ui-widget-content .ui-state-default,
+.ui-datepicker .ui-widget-header .ui-state-default {
+  border: 1px solid #dddddd;
+  background: #f6f6f6 50% 50% repeat-x;
+  font-weight: bold;
+  color: #0073ea; }
+/* line 196, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-default a,
+.ui-datepicker .ui-state-default a:link,
+.ui-datepicker .ui-state-default a:visited {
+  color: #0073ea;
+  text-decoration: none; }
+/* line 205, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-hover,
+.ui-datepicker .ui-widget-content .ui-state-hover,
+.ui-datepicker .ui-widget-header .ui-state-hover,
+.ui-datepicker .ui-state-focus,
+.ui-datepicker .ui-widget-content .ui-state-focus,
+.ui-datepicker .ui-widget-header .ui-state-focus {
+  border: 1px solid #0073ea;
+  background: #0073ea 50% 50% repeat-x;
+  font-weight: bold;
+  color: #ffffff; }
+/* line 214, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-hover a,
+.ui-datepicker .ui-state-hover a:hover,
+.ui-datepicker .ui-state-hover a:link,
+.ui-datepicker .ui-state-hover a:visited {
+  color: #ffffff;
+  text-decoration: none; }
+/* line 220, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-active,
+.ui-datepicker .ui-widget-content .ui-state-active,
+.ui-datepicker .ui-widget-header .ui-state-active {
+  border: 1px solid #dddddd;
+  background: #ffffff 50% 50% repeat-x;
+  font-weight: bold;
+  color: #ff0084; }
+/* line 228, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-active a,
+.ui-datepicker .ui-state-active a:link,
+.ui-datepicker .ui-state-active a:visited {
+  color: #ff0084;
+  text-decoration: none; }
+
+/* Interaction Cues
+----------------------------------*/
+/* line 239, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-highlight,
+.ui-datepicker .ui-widget-content .ui-state-highlight,
+.ui-datepicker .ui-widget-header .ui-state-highlight {
+  border: 1px solid #cccccc;
+  background: #ffffff 50% 50% repeat-x;
+  color: #444444; }
+/* line 246, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-highlight a,
+.ui-datepicker .ui-widget-content .ui-state-highlight a,
+.ui-datepicker .ui-widget-header .ui-state-highlight a {
+  color: #444444; }
+/* line 251, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-error,
+.ui-datepicker .ui-widget-content .ui-state-error,
+.ui-datepicker .ui-widget-header .ui-state-error {
+  border: 1px solid #ff0084;
+  background: #ffffff 50% 50% repeat-x;
+  color: #222222; }
+/* line 258, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-error a,
+.ui-datepicker .ui-widget-content .ui-state-error a,
+.ui-datepicker .ui-widget-header .ui-state-error a {
+  color: #222222; }
+/* line 263, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-error-text,
+.ui-datepicker .ui-widget-content .ui-state-error-text,
+.ui-datepicker .ui-widget-header .ui-state-error-text {
+  color: #222222; }
+/* line 268, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-priority-primary,
+.ui-datepicker .ui-widget-content .ui-priority-primary,
+.ui-datepicker .ui-widget-header .ui-priority-primary {
+  font-weight: bold; }
+/* line 273, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-priority-secondary,
+.ui-datepicker .ui-widget-content .ui-priority-secondary,
+.ui-datepicker .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: normal; }
+/* line 280, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-disabled,
+.ui-datepicker .ui-widget-content .ui-state-disabled,
+.ui-datepicker .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none; }
+/* line 285, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker .ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35);
+  /* For IE8 - See #6059 */ }
+
+/* line 290, ../resources/sass/partials/_jquery-date-picker.scss */
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  display: inline-block; }

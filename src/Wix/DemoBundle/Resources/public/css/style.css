@@ -1,0 +1,400 @@
+/* ============================================================================= */
+/* HTML5 display definitions */
+/* ============================================================================= */
+/* line 7, ../resources/sass/partials/_emphasize.scss */
+article, aside,
+details, figcaption,
+figure, footer, header,
+hgroup, nav, section {
+  display: block; }
+
+/* line 8, ../resources/sass/partials/_emphasize.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 9, ../resources/sass/partials/_emphasize.scss */
+audio:not([controls]) {
+  display: none; }
+
+/* line 10, ../resources/sass/partials/_emphasize.scss */
+[hidden] {
+  display: none; }
+
+/* ============================================================================= */
+/* Base - HTML5 Boilerplate */
+/* ============================================================================= */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+/* line 20, ../resources/sass/partials/_emphasize.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 22, ../resources/sass/partials/_emphasize.scss */
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231; }
+
+/* line 24, ../resources/sass/partials/_emphasize.scss */
+body, button, input,
+select, textarea {
+  font-family: sans-serif;
+  color: #222; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+/* line 31, ../resources/sass/partials/_emphasize.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+/* line 32, ../resources/sass/partials/_emphasize.scss */
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+/* ============================================================================= */
+/* Forms - Baseline framework and HTML5 boilerplate */
+/* ============================================================================= */
+/* line 37, ../resources/sass/partials/_emphasize.scss */
+form {
+  overflow: auto;
+  margin: 0; }
+
+/* line 38, ../resources/sass/partials/_emphasize.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* line 39, ../resources/sass/partials/_emphasize.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0; }
+
+/* line 40, ../resources/sass/partials/_emphasize.scss */
+label {
+  display: block;
+  cursor: pointer; }
+
+/* line 41, ../resources/sass/partials/_emphasize.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+/* line 43, ../resources/sass/partials/_emphasize.scss */
+button, input {
+  line-height: normal;
+  *overflow: visible; }
+
+/* line 44, ../resources/sass/partials/_emphasize.scss */
+table button, table input {
+  *overflow: auto; }
+
+/* line 46, ../resources/sass/partials/_emphasize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 51, ../resources/sass/partials/_emphasize.scss */
+input[type="text"],
+input[type="password"],
+input[type="select"],
+input[type="search"] {
+  width: 99%;
+  display: block; }
+
+/* line 52, ../resources/sass/partials/_emphasize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 54, ../resources/sass/partials/_emphasize.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 57, ../resources/sass/partials/_emphasize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; }
+
+/* line 58, ../resources/sass/partials/_emphasize.scss */
+input[type="radio"] {
+  top: -1px;
+  margin: 0 4px 3px 1px; }
+
+/* line 59, ../resources/sass/partials/_emphasize.scss */
+input[type="checkbox"] {
+  top: -2px;
+  margin: 0 4px 3px 1px; }
+
+/* line 60, ../resources/sass/partials/_emphasize.scss */
+input[type="file"] {
+  margin: 0px 6px 3px 6px; }
+
+/* line 64, ../resources/sass/partials/_emphasize.scss */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+/* line 66, ../resources/sass/partials/_emphasize.scss */
+select {
+  display: block;
+  margin: 0px; }
+
+/* line 67, ../resources/sass/partials/_emphasize.scss */
+textarea {
+  width: 99%;
+  display: block;
+  clear: left;
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/* input:invalid, textarea:invalid 	{ background-color: #f0dddd; } */
+/* line 73, ../resources/sass/partials/_emphasize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; }
+
+/* line 75, ../resources/sass/partials/_emphasize.scss */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px; }
+
+/* ============================================================================= */
+/* Tables - Baseline framework */
+/* ============================================================================= */
+/* line 79, ../resources/sass/partials/_emphasize.scss */
+table {
+  border-collapse: collapse;
+  border-top: solid 3px #000;
+  position: relative;
+  margin-top: 18px;
+  border-spacing: 0; }
+
+/* line 82, ../resources/sass/partials/_emphasize.scss */
+td {
+  vertical-align: top; }
+
+/* line 83, ../resources/sass/partials/_emphasize.scss */
+th, td {
+  line-height: 18px;
+  padding: 9px 18px 8px 0; }
+
+/* line 84, ../resources/sass/partials/_emphasize.scss */
+thead th, thead td {
+  padding-top: 7px; }
+
+/* line 85, ../resources/sass/partials/_emphasize.scss */
+tfoot th, tfoot td {
+  padding-bottom: 8px; }
+
+/* line 87, ../resources/sass/partials/_emphasize.scss */
+tbody th, tbody td,
+tfoot th, tfoot td {
+  border-top: solid 1px #000; }
+
+/* line 89, ../resources/sass/partials/_emphasize.scss */
+th:first-child, td:first-child {
+  padding-left: 0; }
+
+/* line 90, ../resources/sass/partials/_emphasize.scss */
+th:last-child, td:last-child {
+  padding-right: 0; }
+
+/* line 94, ../resources/sass/partials/_emphasize.scss */
+tbody tr:nth-child(odd) th,
+tbody tr:nth-child(odd) td {
+  background: rgba(0, 0, 0, 0.035); }
+
+/* line 96, ../resources/sass/partials/_emphasize.scss */
+caption {
+  top: 5px;
+  margin-bottom: 18px; }
+
+/* ============================================================================= */
+/* Typography - HTML5 Boilerplate */
+/* ============================================================================= */
+/* line 101, ../resources/sass/partials/_emphasize.scss */
+p {
+  margin: 0; }
+
+/* line 102, ../resources/sass/partials/_emphasize.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0; }
+
+/* line 103, ../resources/sass/partials/_emphasize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 104, ../resources/sass/partials/_emphasize.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 105, ../resources/sass/partials/_emphasize.scss */
+blockquote {
+  margin: 1em 40px; }
+
+/* line 106, ../resources/sass/partials/_emphasize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 107, ../resources/sass/partials/_emphasize.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 109, ../resources/sass/partials/_emphasize.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* line 110, ../resources/sass/partials/_emphasize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+/* line 114, ../resources/sass/partials/_emphasize.scss */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+/* line 118, ../resources/sass/partials/_emphasize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 120, ../resources/sass/partials/_emphasize.scss */
+q {
+  quotes: none; }
+
+/* line 121, ../resources/sass/partials/_emphasize.scss */
+q:before, q:after {
+  content: "";
+  content: none; }
+
+/* line 122, ../resources/sass/partials/_emphasize.scss */
+small {
+  font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+/* line 125, ../resources/sass/partials/_emphasize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 127, ../resources/sass/partials/_emphasize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 128, ../resources/sass/partials/_emphasize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ============================================================================= */
+/* Lists - HTML5 Boilerplate */
+/* ============================================================================= */
+/* line 133, ../resources/sass/partials/_emphasize.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+/* line 134, ../resources/sass/partials/_emphasize.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+/* ============================================================================= */
+/* Embedded content - HTML5 Boilerplate */
+/* ============================================================================= */
+/* Improve image quality when scaled in IE7 */
+/* Remove the gap between images and borders on image containers */
+/* line 141, ../resources/sass/partials/_emphasize.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+/* Correct overflow not hidden in IE9 */
+/* line 144, ../resources/sass/partials/_emphasize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ============================================================================= */
+/* Figures - HTML5 Boilerplate */
+/* ============================================================================= */
+/* line 149, ../resources/sass/partials/_emphasize.scss */
+figure {
+  margin: 0; }
+
+/* ============================================================================= */
+/* Links */
+/* ============================================================================= */
+/* line 158, ../resources/sass/partials/_emphasize.scss */
+a,
+a:focus,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0; }
+
+/*
+A mixin to take an image path and:
+  + Implement it as a data URI.
+  + Calculate its width and height.
+  + Add an inline-block display.
+Its main purpose is to simplify implementation of image replacement.
+
+In your scss:
+.some-class { @include background-image("path-to-image.jpg"[,additional-arguments]); }
+*/
+/*
+Helper to ease the use of inline-blocks -
+The faster, more usable and more sane use of aligning elements horizontally.
+*/
+/*
+Rotate an element by degress.
+Can only get a multiplication of 90 degrees for sane behavior.
+Other rotations needs careful consideration first to align properly.
+*/
