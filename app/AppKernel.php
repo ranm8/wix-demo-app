@@ -21,7 +21,7 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Wix\DemoBundle\WixDemoBundle(),
             new Wix\FrameworkBundle\WixFrameworkBundle(),
-//            new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
+            new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
         );
 

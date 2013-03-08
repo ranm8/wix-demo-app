@@ -25,8 +25,6 @@ class UserController extends ParentController
      */
     public function getUserAction()
     {
-        return new JsonResponse(new \stdClass());
-
         return $this->jsonResponse(
             $this->getUserDocument()
         );
