@@ -77,18 +77,11 @@
         /**
          * @name Ui.uiColorPicker
          * @description
-         * Activates a DOM select element as a Chosen element. It requires Chosen plugin to work but it will not throw
-         * any exceptions if it's not available. See @link { http://harvesthq.github.com/chosen } for more information.
-         *
-         * It can be configured with the following HTML attributes:
-         *   ui-disable-search: Disables the search option.
-         *   ui-allow-single-deselect: Allows a single deselect.
+         * Activates a DOM select element as a colorpicker element. It requires Wix's ColorPicker plugin to work but it will not throw
+         * any exceptions if it's not available.
          *
          * @example
-         *   <select data-ui-chosen data-ng-model="model"
-         *           data-ui-disable-search="true"
-         *           data-ng-options="object for object in array">
-         *   </select>
+         *   <div data-ui-color-picker data-ng-model="user.searchBorder"></div>
          */
         .directive('uiColorPicker', function() {
             return {
