@@ -39,6 +39,7 @@ class UserController extends ParentController
     {
         $data = json_decode($this->getRequest()->getContent());
 
+        // Throw exception if no body data was found
         if ($data === null) {
             throw new MissingParametersException('POST data was not given');
         }
@@ -46,6 +47,7 @@ class UserController extends ParentController
         /** @var ApplicationUser $user */
         $user = $this->getUserDocument();
 
+        // Update some doc data
         $user->setFontFamily($data->fontFamily);
         $user->setFontSize($data->fontSize);
         $user->setTitleColor($data->titleColor);
@@ -60,34 +62,10 @@ class UserController extends ParentController
         $user->setSearchBorderOpacityValue($data->searchBorderOpacityValue);
         $user->setBorderColor($data->borderColor);
 
-//        $user = $this->updateUserDoc($user);
-        $this->getDocumentManager()->persist($user);
-        $this->getDocumentManager()->flush($user);
+        // Save the user doc
+        $user = $this->updateUserDoc($user);
 
+        // Return the updated user object
         return $this->jsonResponse($user);
     }
-
-    /**
-     * Serializes the object and returns JSON response
-     *
-     * @param $object
-     * @return JsonResponse
-     */
-    protected function jsonResponse($object)
-    {
-        return new JsonResponse($this->getSerializer()->normalize($object, 'json'));
-    }
-
-    /**
-     * Returns GetSetMethod JSON serializer object
-     *
-     * @return Serializer
-     */
-    protected function getSerializer()
-    {
-        $serializer = new Serializer(array(new GetSetMethodNormalizer()), array(new JsonEncoder()));
-
-        return $serializer;
-    }
-
 }
