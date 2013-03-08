@@ -19,7 +19,8 @@
         "jms/security-extra-bundle": "1.4.*",
         "jms/di-extra-bundle": "1.3.*",
         "friendsofsymfony/jsrouting-bundle": "1.1.*",
-        "wix/framework-bundle": "dev-master"
+        "wix/framework-bundle": "dev-master",
+        "doctrine/mongodb-odm-bundle": "3.0.*"
     },
     "scripts": {
         "post-install-cmd": [
@@ -38,7 +39,7 @@
     "config": {
         "bin-dir": "bin"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "alpha",
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",

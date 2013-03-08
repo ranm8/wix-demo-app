@@ -13,19 +13,51 @@
      * with every backend, but support currently only support for Symfony2 exists.
      */
     window.angular.module('Wix', ['Text', 'Ui', 'Routing'])
-        /**
-         * Pushes URL changes to Wix's editor. The next time a user visits that URL the same page of your application
-         * will be displayed (page applications only).
-         *
-         * Please note that this feature only works when HTML5 mode is enabled.
-         *
-         * * currently disabled.
-         */
-        .run(['$rootScope', '$location', 'sdk', function ($rootScope, $location, sdk) {
-//            $rootScope.$on('$routeChangeSuccess', function() {
-//                sdk.pushState($location.path());
-//            });
+        .run(['wixDeepLinking', function (wixDeepLinking) {
+
         }])
+
+        /**
+         * @name Wix.wixDeepLinking
+         * @requires $rootScope
+         * @requires $location
+         * @requires sdk
+         * @description
+         * If enabled, it will push successful route changes to Wix's SDK to enable deep linking in an application. Please
+         * note that this feature only works when HTML5 mode is enabled and only in a page (section) application.
+         *
+         * To enable deep linking, make a call to deepLinkingMode(true) in your module's config() method.
+         */
+        .provider('wixDeepLinking', function() {
+            var deepLinkingMode = false,
+                baseHost = '';
+
+            this.deepLinkingMode = function(mode) {
+                if (window.angular.isDefined(mode)) {
+                    deepLinkingMode = mode;
+                    return this;
+                }
+
+                return deepLinkingMode;
+            };
+
+            this.baseHost = function(host) {
+                if (window.angular.isDefined(host)) {
+                    baseHost = host;
+                    return this;
+                }
+
+                return baseHost;
+            };
+
+            this.$get = ['$rootScope', '$location', 'sdk', function($rootScope, $location, sdk) {
+                if (deepLinkingMode) {
+                    $rootScope.$on('$routeChangeSuccess', function() {
+                        sdk.pushState($location.path().replace(baseHost, ''));
+                    });
+                }
+            }];
+        })
 
         /**
          * @name Wix.sdk
@@ -142,21 +174,23 @@
          * @example
          */
         .provider('wixTransformer', function() {
-            this.$get = ['queryParams', 'urlEncoder', function(queryParams, urlEncoder) {
+            this.$get = ['$location', 'urlEncoder', function($location, urlEncoder) {
                 /**
                  * Returns an object with the wix required parameters.
                  *
                  * @returns {Object}
                  */
                 function params() {
+                    var query = $location.search();
+
                     return {
-                        'section-url': queryParams['section-url'] || null,
-                        cacheKiller: queryParams.cacheKiller || null,
-                        instance: queryParams.instance || null,
-                        target: queryParams.target || null,
-                        width: queryParams.width || null,
-                        compId: queryParams.compId || null,
-                        origCompId: queryParams.origCompId || null
+                        'section-url': query['section-url'] || null,
+                        cacheKiller: query.cacheKiller || null,
+                        instance: query.instance || null,
+                        target: query.target || null,
+                        width: query.width || null,
+                        compId: query.compId || null,
+                        origCompId: query.origCompId || null
                     };
                 }
 

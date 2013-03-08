@@ -65,16 +65,16 @@ swiftmailer:
     spool:     { type: memory }
 
 # MongoDB Configuration
-doctrine_mongodb:
-    connections:
-        default:
-            server: mongodb://localhost:27017
-            options: {}
-    default_database: hello_%kernel.environment%
-    document_managers:
-        default:
-            auto_mapping: true
-            metadata_cache_driver: array # array, apc, xcache, memcache
+#doctrine_mongodb:
+#    connections:
+#        default:
+#            server: mongodb://localhost:27017
+#            options: {}
+#    default_database: hello_%kernel.environment%
+#    document_managers:
+#        default:
+#            auto_mapping: true
+#            metadata_cache_driver: array # array, apc, xcache, memcache
 
 # Wix Framework Configuration
 wix_framework:
