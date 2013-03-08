@@ -13,12 +13,12 @@
          */
         .config(['$routeProvider', '$locationProvider', 'symfony2RouterProvider', function($routeProvider, $locationProvider, symfony2RouterProvider) {
             $routeProvider
-                .when('/app/settings', {
+                .when('/settings', {
                     controller: window.DemoCtrl,
                     resolve: window.DemoCtrl.resolve,
                     templateUrl: '/../bundles/wixdemo/partials/demo.html'
                 })
-                .when('/app/view', {
+                .when('/', {
                     controller: window.ViewCtrl,
                     resolve: window.ViewCtrl.resolve,
                     templateUrl: '/../bundles/wixdemo/partials/view.html'
