@@ -191,7 +191,7 @@ input[type="radio"] + label {
 /* line 79, ../resources/sass/partials/_emphasize.scss */
 table {
   border-collapse: collapse;
-  border-top: solid 3px #000;
+  border-top: solid 3px black;
   position: relative;
   margin-top: 18px;
   border-spacing: 0; }
@@ -216,7 +216,7 @@ tfoot th, tfoot td {
 /* line 87, ../resources/sass/partials/_emphasize.scss */
 tbody th, tbody td,
 tfoot th, tfoot td {
-  border-top: solid 1px #000; }
+  border-top: solid 1px black; }
 
 /* line 89, ../resources/sass/partials/_emphasize.scss */
 th:first-child, td:first-child {
@@ -269,7 +269,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0; }
 
@@ -290,7 +290,7 @@ mark {
 /* line 114, ../resources/sass/partials/_emphasize.scss */
 pre, code, kbd, samp {
   font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
+  _font-family: "courier new", monospace;
   font-size: 1em; }
 
 /* Improve readability of pre-formatted text in all browsers */
@@ -402,8 +402,7 @@ Other rotations needs careful consideration first to align properly.
 body {
   text-align: center;
   color: #333;
-  background: #FAF0D9;
-  padding: 20px 0 30px; }
+  background: #FAF0D9; }
 
 /* line 7, ../resources/sass/partials/_demo.scss */
 #main {
@@ -414,28 +413,27 @@ body {
   background: #FAF0D9;
   margin: 0 auto;
   background: #fff;
-  padding: 2em;
   text-align: left; }
 
-/* line 21, ../resources/sass/partials/_demo.scss */
+/* line 20, ../resources/sass/partials/_demo.scss */
 .front h2 {
   display: inline-block;
   vertical-align: top;
   font-size: 30px; }
-/* line 25, ../resources/sass/partials/_demo.scss */
+/* line 24, ../resources/sass/partials/_demo.scss */
 .front p {
   font-size: 14px;
   margin: 20px 0; }
-/* line 28, ../resources/sass/partials/_demo.scss */
+/* line 27, ../resources/sass/partials/_demo.scss */
 .front .lead {
   font-size: 20px; }
-/* line 29, ../resources/sass/partials/_demo.scss */
+/* line 28, ../resources/sass/partials/_demo.scss */
 .front .btn {
   float: right; }
-/* line 30, ../resources/sass/partials/_demo.scss */
+/* line 29, ../resources/sass/partials/_demo.scss */
 .front .header {
   padding: 20px 0; }
-/* line 31, ../resources/sass/partials/_demo.scss */
+/* line 30, ../resources/sass/partials/_demo.scss */
 .front > div:not(.header) {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f6f6f6), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(radial, 50% 0, 0, 50% 0, 70, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(70%, transparent));
   background: -webkit-linear-gradient(#f6f6f6 30%, rgba(255, 255, 255, 0)), -webkit-radial-gradient(50% 0, rgba(0, 0, 0, 0.3), transparent 70%);
@@ -464,6 +462,7 @@ TODO: On-the-fly button generator.
 */
 /* line 45, ../resources/sass/modules/_buttons.scss */
 .btn-blue {
+  background: #00a5ff;
   background: #00a5ff -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #00a5ff), color-stop(70%, #008cd8));
   background: #00a5ff -webkit-linear-gradient(#00a5ff 30%, #008cd8 70%);
   background: #00a5ff -moz-linear-gradient(#00a5ff 30%, #008cd8 70%);
@@ -487,6 +486,7 @@ TODO: On-the-fly button generator.
 
 /* line 46, ../resources/sass/modules/_buttons.scss */
 .btn-white {
+  background: #f6f6f6;
   background: #f6f6f6 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f6f6f6), color-stop(70%, #d1d1d1));
   background: #f6f6f6 -webkit-linear-gradient(#f6f6f6 30%, #d1d1d1 70%);
   background: #f6f6f6 -moz-linear-gradient(#f6f6f6 30%, #d1d1d1 70%);
@@ -625,7 +625,7 @@ Color picker implementation.
 Automatically imports with the color picker module.
 See <a href="#">Color picker module</a>
 */
-/* line 25, ../resources/sass/modules/_color-picker.scss */
+/* line 27, ../resources/sass/modules/_color-picker.scss */
 div.colorPicker-picker {
   background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABUCAYAAADAkmT2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDREZEMkRFNDMxMjA2ODExODhDNjhDQTIxMTQ1RkQ0QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MkM4QzdDNjM2RjkxMUUyOUZFNTkxQjBFMkU5MEQ3QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5MkM4QzdDNTM2RjkxMUUyOUZFNTkxQjBFMkU5MEQ3QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Q0VGRDJERTQzMTIwNjgxMTg4QzY4Q0EyMTE0NUZENEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Q0RGRDJERTQzMTIwNjgxMTg4QzY4Q0EyMTE0NUZENEMiLz4gPC9yZGY6RGVzY3Jp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') top left no-repeat;
   height: 84px;
@@ -634,19 +634,21 @@ div.colorPicker-picker {
   height: 28px;
   vertical-align: middle;
   border: none;
-  position: relative; }
-  /* line 17, ../resources/sass/modules/_color-picker.scss */
+  position: relative;
+  z-index: 2; }
+  /* line 18, ../resources/sass/modules/_color-picker.scss */
   div.colorPicker-picker:hover {
     background-position: 0 -29px; }
-  /* line 18, ../resources/sass/modules/_color-picker.scss */
+  /* line 19, ../resources/sass/modules/_color-picker.scss */
   div.colorPicker-picker:active {
     background-position: 0 -57px; }
-  /* line 19, ../resources/sass/modules/_color-picker.scss */
+  /* line 20, ../resources/sass/modules/_color-picker.scss */
   div.colorPicker-picker ~ .inner {
     display: inline-block;
     height: 16px;
     width: 28px;
     content: "";
+    z-index: 1;
     top: 5px;
     left: -45px; }
 
@@ -711,7 +713,7 @@ See <a href="#">Dialog module</a>
 */
 /* line 12, ../resources/sass/modules/_dialog.scss */
 .ui-dialog {
-  box-shadow: 0 0 8px #bbb;
+  box-shadow: 0 0 8px #bbbbbb;
   border-radius: 10px;
   overflow: hidden;
   z-index: 2;
@@ -756,7 +758,7 @@ See <a href="#">Dialog module</a>
   left: 0;
   width: 100%;
   height: 100%;
-  background: #111 50% 50% repeat;
+  background: #111111 50% 50% repeat;
   opacity: .7;
   filter: Alpha(Opacity=70); }
 
@@ -913,13 +915,13 @@ See <a href="#">Dialog module</a>
 /* line 17, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker {
   width: 17em;
-  padding: .2em .2em 0;
+  padding: 0.2em 0.2em 0;
   display: none; }
 
 /* line 22, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker .ui-datepicker-header {
   position: relative;
-  padding: .2em 0; }
+  padding: 0.2em 0; }
 
 /* line 27, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker .ui-datepicker-prev,
@@ -981,11 +983,11 @@ See <a href="#">Dialog module</a>
   width: 100%;
   font-size: .9em;
   border-collapse: collapse;
-  margin: 0 0 .4em; }
+  margin: 0 0 0.4em; }
 
 /* line 77, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker th {
-  padding: .7em .3em;
+  padding: 0.7em 0.3em;
   text-align: center;
   font-weight: bold;
   border: 0; }
@@ -1006,8 +1008,8 @@ See <a href="#">Dialog module</a>
 /* line 94, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker .ui-datepicker-buttonpane {
   background-image: none;
-  margin: .7em 0 0 0;
-  padding: 0 .2em;
+  margin: 0.7em 0 0 0;
+  padding: 0 0.2em;
   border-left: 0;
   border-right: 0;
   border-bottom: 0; }
@@ -1015,9 +1017,9 @@ See <a href="#">Dialog module</a>
 /* line 102, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker .ui-datepicker-buttonpane button {
   float: right;
-  margin: .5em .2em .4em;
+  margin: 0.5em 0.2em 0.4em;
   cursor: pointer;
-  padding: .2em .6em .3em .6em;
+  padding: 0.2em 0.6em 0.3em 0.6em;
   width: auto;
   overflow: visible; }
 
@@ -1037,7 +1039,7 @@ See <a href="#">Dialog module</a>
 /* line 121, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker-multi .ui-datepicker-group table {
   width: 95%;
-  margin: 0 auto .4em; }
+  margin: 0 auto 0.4em; }
 
 /* line 125, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker-multi-2 .ui-datepicker-group {
@@ -1085,7 +1087,7 @@ See <a href="#">Dialog module</a>
 /* line 164, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker.ui-widget-content, .ui-datepicker .ui-widget-content {
   border: 1px solid #dddddd;
-  background: #ffffff 50% 50% repeat-x;
+  background: white 50% 50% repeat-x;
   color: #444444; }
 /* line 169, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker .ui-widget-content a {
@@ -1139,7 +1141,7 @@ See <a href="#">Dialog module</a>
 .ui-datepicker .ui-widget-content .ui-state-active,
 .ui-datepicker .ui-widget-header .ui-state-active {
   border: 1px solid #dddddd;
-  background: #ffffff 50% 50% repeat-x;
+  background: white 50% 50% repeat-x;
   font-weight: bold;
   color: #ff0084; }
 /* line 228, ../resources/sass/partials/_jquery-date-picker.scss */
@@ -1156,7 +1158,7 @@ See <a href="#">Dialog module</a>
 .ui-datepicker .ui-widget-content .ui-state-highlight,
 .ui-datepicker .ui-widget-header .ui-state-highlight {
   border: 1px solid #cccccc;
-  background: #ffffff 50% 50% repeat-x;
+  background: white 50% 50% repeat-x;
   color: #444444; }
 /* line 246, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker .ui-state-highlight a,
@@ -1168,7 +1170,7 @@ See <a href="#">Dialog module</a>
 .ui-datepicker .ui-widget-content .ui-state-error,
 .ui-datepicker .ui-widget-header .ui-state-error {
   border: 1px solid #ff0084;
-  background: #ffffff 50% 50% repeat-x;
+  background: white 50% 50% repeat-x;
   color: #222222; }
 /* line 258, ../resources/sass/partials/_jquery-date-picker.scss */
 .ui-datepicker .ui-state-error a,
