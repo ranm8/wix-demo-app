@@ -1,0 +1,10 @@
+wix_demo_controller:
+    resource: "@WixDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+wix_demo_angularjs:
+    pattern: /{slug}
+    defaults: { _controller: WixDemoBundle:Main:index, slug: "" }
+    requirements:
+        slug: ".+"
