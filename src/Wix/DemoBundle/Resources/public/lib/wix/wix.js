@@ -201,7 +201,7 @@
                  * @returns {string}
                  */
                 function transform(url) {
-                    return urlEncoder(url, params());
+                    return urlEncoder.encode(url, params());
                 }
 
                 return transform;

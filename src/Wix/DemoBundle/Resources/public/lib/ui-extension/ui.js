@@ -37,6 +37,82 @@
         }])
 
         /**
+         * @name AppMarket.directives.script
+         * @description
+         * Used as a way to create initial payload. Creating a script tag with type of application/json will get the
+         * data it includes into the $http cache.
+         */
+        .directive('script', ['$cacheFactory', function($cacheFactory) {
+            return {
+                restrict: 'E',
+                terminal: true,
+                compile: function(elm, attr) {
+                    if (attr.type === 'application/json') {
+                        var templateUrl = attr.id,
+                            text = elm.text();
+
+                        $cacheFactory.get('$http').put(templateUrl, [200, text]);
+                    }
+                }
+            };
+        }])
+
+        /**
+         * @name AppMarket.directives.onReady
+         * @description
+         * Once the DOM object has been loaded, the provided angular expression will be fired.
+         */
+        .directive('onReady', [function() {
+            return {
+                link: function(scope, elm, attr, ctrl) {
+                    elm.load(function() {
+                        scope.$apply(attr.onReady);
+                    });
+                }
+            };
+        }])
+
+        /**
+         * @name AppMarket.directives.placeholder
+         * @description
+         * Provides backward compatibility for the html5 placeholder tag for browsers that don't support it.
+         */
+        .directive('placeholder', [function(){
+            return {
+                require: '?ngModel',
+                link: function(scope, elm, attr, ctrl){
+                    if (attr.type === 'password') {
+                        return;
+                    }
+
+                    elm.val(attr.placeholder);
+
+                    ctrl.$render = function() {
+                        elm.on('focus', function() {
+                            if (elm.val() === attr.placeholder) {
+                                elm.val('');
+                            }
+                        });
+
+                        elm.on('blur', function() {
+                            if (elm.val() === '') {
+                                elm.val(attr.placeholder);
+                            }
+                        });
+                    };
+
+                    ctrl.$formatters.unshift(function(value) {
+                        if (!value) {
+                            return attr.placeholder;
+                        }
+
+                        return value;
+                    });
+                }
+            };
+        }])
+
+        /**
          * @name Ui.uiChosen
          * @description
          * Activates a DOM select element as a Chosen element. It requires Chosen plugin to work but it will not throw

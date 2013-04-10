@@ -20,7 +20,7 @@
             return function(text, length, preserve, separator) {
                 text = text || '';
                 length = length || 30;
-                preserve = preserve || false;
+                preserve = preserve === undefined ? true : preserve;
                 separator = separator || '...';
 
                 if(text.length > length) {

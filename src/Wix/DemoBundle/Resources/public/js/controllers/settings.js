@@ -5,9 +5,9 @@
     'use strict';
 
     /**
-     * Simple demo control that can be used as a starting place.
+     * Simple settings control that can be used as a starting place.
      */
-    var DemoCtrl = function($scope, $http, symfony2Router, sdk, partialLoader, user) {
+    var SettingsCtrl = function($scope, $http, symfony2Router, sdk, partialLoader, user) {
         /**
          * User model. Holds data on the active user.
          */
@@ -39,7 +39,7 @@
             }
 
             $http.post(symfony2Router.path('postUser'), user)
-                .success(function() {
+                .then(function() {
                     sdk.Settings.refreshCurrentApp();
                 });
         }, true);
@@ -48,28 +48,24 @@
     /**
      * These promises will be resolved before the page is loaded and rendered to a user.
      */
-    DemoCtrl.resolve = {
+    SettingsCtrl.resolve = {
         /**
          * Fetching a user model from the backend to make it available to this controller.
          */
         user: ['$http', '$q', 'symfony2Router', function($http, $q, symfony2Router) {
-            var user = $q.defer();
-
-            $http.get(symfony2Router.path('getUser')).success(function(response) {
-                user.resolve(response);
+            return $http.get(symfony2Router.path('getUser')).then(function(response) {
+                return response.data;
             });
-
-            return user.promise;
         }]
     };
 
     /**
      * Concrete injections
      */
-    DemoCtrl.$inject = ['$scope', '$http', 'symfony2Router', 'sdk', 'partialLoader', 'user'];
+    SettingsCtrl.$inject = ['$scope', '$http', 'symfony2Router', 'sdk', 'partialLoader', 'user'];
 
     /**
      * Import to global scope
      */
-    window.DemoCtrl = DemoCtrl;
+    window.SettingsCtrl = SettingsCtrl;
 }(window));

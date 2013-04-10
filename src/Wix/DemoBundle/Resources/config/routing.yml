@@ -1,10 +1,14 @@
+# Restful routing
 wix_demo_controller:
     resource: "@WixDemoBundle/Controller/"
     type:     annotation
     prefix:   /
 
+# Main routing path
 wix_demo_angularjs:
     pattern: /{slug}
     defaults: { _controller: WixDemoBundle:Main:index, slug: "" }
     requirements:
         slug: ".+"
+    options:
+            expose: true

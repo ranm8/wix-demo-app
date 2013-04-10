@@ -21,14 +21,10 @@
         /**
          * Fetching a user model from the backend to make it available to this controller.
          */
-        user: ['$http', '$q', 'symfony2Router', function($http, $q, symfony2Router) {
-            var user = $q.defer();
-
-            $http.get(symfony2Router.path('getUser')).success(function(response) {
-                user.resolve(response);
+        user: ['$http', 'symfony2Router', function($http, symfony2Router) {
+            return $http.get(symfony2Router.path('getUser')).then(function(response) {
+                return response.data;
             });
-
-            return user.promise;
         }]
     };
 

@@ -4,7 +4,10 @@ namespace Wix\DemoBundle\Controller;
 
 use Wix\FrameworkBundle\Controller\WixController;
 
-class ParentController extends WixController
+/**
+ * Abstract class used for all wix controllers to provide common functionality
+ */
+abstract class ParentController extends WixController
 {
     /**
      * @inheritDoc

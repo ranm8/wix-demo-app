@@ -4,19 +4,17 @@
 (function(window) {
     'use strict';
 
-    /**
-     * @todo docs
-     */
-    window.angular.module('Base', ['Base.filters', 'Base.services', 'Base.directives', 'Base.config', 'Wix'])
+    window.angular.module('Base', ['Base.filters', 'Base.services', 'Base.directives', 'Wix'])
         /**
-         * @todo docs
+         * config phase
          */
         .config(['$routeProvider', '$locationProvider', 'symfony2RouterProvider', function($routeProvider, $locationProvider, symfony2RouterProvider) {
+            // setting routes
             $routeProvider
                 .when('/settings', {
-                    controller: window.DemoCtrl,
-                    resolve: window.DemoCtrl.resolve,
-                    templateUrl: '/../bundles/wixdemo/partials/demo.html'
+                    controller: window.SettingsCtrl,
+                    resolve: window.SettingsCtrl.resolve,
+                    templateUrl: '/../bundles/wixdemo/partials/settings.html'
                 })
                 .when('/', {
                     controller: window.ViewCtrl,
@@ -24,8 +22,13 @@
                     templateUrl: '/../bundles/wixdemo/partials/view.html'
                 });
 
-            $locationProvider.html5Mode(true);
+            // html5 mode
+            $locationProvider
+                .html5Mode(true)
+                .hashPrefix('!');
 
-            symfony2RouterProvider.urlTransformers.push('wixTransformer');
+            // enable the wix transformer
+            symfony2RouterProvider
+                .urlTransformers.push('wixTransformer');
         }]);
 }(window));

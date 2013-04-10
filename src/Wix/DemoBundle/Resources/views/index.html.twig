@@ -3,19 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>Wix demo application</title>
-    {#<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />#}
+    <base href="{{ url('wix_demo_angularjs') }}">
 
-    <!-- dependency css -->
+    <!-- stylesheets -->
     {% stylesheets filter='cssrewrite'
-    'bundles/wixdemo/lib/bootstrap/css/bootstrap.css'
-    'bundles/wixdemo/lib/chosen/chosen.css'
-    'bundles/wixdemo/lib/color-picker/color-picker.css'
-    'bundles/wixdemo/lib/fontello/css/fontello.css' %}
-    <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
-
-    <!-- application styles -->
-    {% stylesheets
+    '@WixDemoBundle/Resources/public/lib/bootstrap/css/bootstrap.css'
+    '@WixDemoBundle/Resources/public/lib/chosen/chosen.css'
+    '@WixDemoBundle/Resources/public/lib/color-picker/color-picker.css'
+    '@WixDemoBundle/Resources/public/lib/fontello/css/fontello.css'
     '@WixDemoBundle/Resources/public/css/settings.css'
     '@WixDemoBundle/Resources/public/css/style.css' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
@@ -35,7 +30,7 @@
 <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
 <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 
-<!-- dependency scripts -->
+<!-- scripts -->
 {% javascripts
 '@WixDemoBundle/Resources/public/lib/jquery/jquery.js'
 '@WixDemoBundle/Resources/public/lib/jquery-ui/js/jquery-ui.js'
@@ -48,12 +43,7 @@
 '@WixDemoBundle/Resources/public/lib/text-extension/text.js'
 '@WixDemoBundle/Resources/public/lib/ui-extension/ui.js'
 '@WixDemoBundle/Resources/public/lib/routing-extension/routing.js'
-'@WixDemoBundle/Resources/public/lib/wix/wix.js' %}
-<script src="{{ asset_url }}"></script>
-{% endjavascripts %}
-
-<!-- application scripts -->
-{% javascripts
+'@WixDemoBundle/Resources/public/lib/wix/wix.js'
 '@WixDemoBundle/Resources/public/js/controllers/*.js'
 '@WixDemoBundle/Resources/public/js/*.js' %}
 <script src="{{ asset_url }}"></script>
