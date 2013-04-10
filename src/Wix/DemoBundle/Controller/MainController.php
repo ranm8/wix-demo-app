@@ -11,7 +11,7 @@ class MainController extends ParentController
 {
     public function indexAction()
     {
-        if (!$this->hasPath() || !$this->getInstance()) {
+        if (!$this->hasPath()) {
             throw new NotFoundHttpException('Oops! The page you were looking for does not exist.');
         }
 
@@ -35,6 +35,10 @@ class MainController extends ParentController
             if (strpos($this->getRequest()->getPathInfo(), $path) === 0) {
                 return true;
             }
+        }
+
+        if ($this->getRequest()->getPathInfo() === '/') {
+            return true;
         }
 
         return false;
